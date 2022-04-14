@@ -133,37 +133,38 @@ namespace Online_Clinic
                     label1.ForeColor = Color.Red;
 
                 if (textBox3.Text == "")
+
+                if (kryptonTextBox4.Text == "")
+
                     label3.ForeColor = Color.Red;
 
-            //    if (textBox4.Text == "")
-             //       label4.ForeColor = Color.Red;
+                if (kryptonTextBox5.Text == "")
+                    label4.ForeColor = Color.Red;
 
-           //     if (textBox5.Text == "")
-           //         label5.ForeColor = Color.Red;
+                if (kryptonTextBox6.Text == "" || kryptonTextBox7.Text == "")
+                    label5.ForeColor = Color.Red;
 
-          //      if (age < 16)
-          //          label6.ForeColor = Color.Red;
+                if (age < 16)
+                    label5.ForeColor = Color.Red;
 
-         //       if (radioButton1.Checked == false && radioButton2.Checked == false)
-         //           label7.ForeColor = Color.Red;
+                if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
+                    label6.ForeColor = Color.Red;
 
-            //    if (textBox6.Text == "")
-          //          label8.ForeColor = Color.Red;
+                if (kryptonTextBox8.Text == "")
+                    label7.ForeColor = Color.Red;
 
-              //  if (textBox4.Text != textBox5.Text && textBox4.Text != "")
-              //  {
-               //     label10.Visible = true;
-                //    label9.Visible = false;
-                 //   label4.ForeColor = Color.Red;
-                 //   label5.ForeColor = Color.Red;
-              //  }
-              //  else if (textBox5.Text == textBox5.Text && textBox4.Text != "")
-              //  {
-                  //  label9.Visible = true;
-                 //   label10.Visible = false;
-               //     label4.ForeColor = Color.Green;
-               //     label5.ForeColor = Color.Green;
-             //  }
+                if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+                {
+                    label12.Visible = true;
+                    
+                }
+                else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+                {
+                
+                   label12.Visible = false;
+                    kryptonTextBox4.ForeColor= Color.Green;
+                    kryptonTextBox5.BackColor = Color.Green;
+                }
 
 
 
