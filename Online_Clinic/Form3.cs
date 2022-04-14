@@ -32,8 +32,7 @@ namespace Online_Clinic
         public Form3()
         {
             InitializeComponent();
-          //  if (policy_Checked == true)
-             //   button1.Enabled = checkBox3.Checked;
+      
         }
 
         private void Form3_Load(object sender, EventArgs e)
