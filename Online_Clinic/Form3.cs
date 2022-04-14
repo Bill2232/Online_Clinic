@@ -132,20 +132,20 @@ namespace Online_Clinic
                 if (kryptonTextBox2.Text == "")
                     label1.ForeColor = Color.Red;
 
-                if (textBox3.Text == "")
+                if (kryptonTextBox4.Text == "")
                     label3.ForeColor = Color.Red;
 
-            //    if (textBox4.Text == "")
-             //       label4.ForeColor = Color.Red;
+                if (kryptonTextBox5.Text == "")
+                    label4.ForeColor = Color.Red;
 
-           //     if (textBox5.Text == "")
-           //         label5.ForeColor = Color.Red;
+                if (kryptonTextBox6.Text == "" || kryptonTextBox7.Text == "")
+                    label5.ForeColor = Color.Red;
 
-          //      if (age < 16)
-          //          label6.ForeColor = Color.Red;
+                if (age < 16)
+                    label5.ForeColor = Color.Red;
 
-         //       if (radioButton1.Checked == false && radioButton2.Checked == false)
-         //           label7.ForeColor = Color.Red;
+                if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
+                    label6.ForeColor = Color.Red;
 
             //    if (textBox6.Text == "")
           //          label8.ForeColor = Color.Red;
