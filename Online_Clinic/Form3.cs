@@ -20,7 +20,7 @@ namespace Online_Clinic
         SqlCommand cmd;
 
         int age = 0;
-       // bool policy_Checked = false;
+       
         bool Valid_email = false;
         bool password_macth = false;
         bool gander_Checked = false;
