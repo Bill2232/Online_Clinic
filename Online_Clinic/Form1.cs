@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
 using System.IO;
-//fu
+
 
 namespace Online_Clinic
 {
