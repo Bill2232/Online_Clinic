@@ -253,17 +253,17 @@ namespace Online_Clinic
         {
             label3.ForeColor = Color.Black;
             //check avelabeil in Patient table
-            SqlDataAdapter ska = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + textBox3.Text + "'", con);
+            SqlDataAdapter ska = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + kryptonTextBox2.Text + "'", con);
             DataTable mail = new DataTable();
             ska.Fill(mail);
             //check avelabeil in doctor table
-            SqlDataAdapter dska = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + textBox3.Text + "'", con);
+            SqlDataAdapter dska = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox2.Text + "'", con);
             DataTable doctor_mail = new DataTable();
             dska.Fill(doctor_mail);
-            if (textBox3.Text.Contains('@') && textBox3.Text.Contains("."))
+            if (kryptonTextBox2.Text.Contains('@') && kryptonTextBox2.Text.Contains("."))
             {
 
-                pictureBox4.Visible = false;
+              //  pictureBox4.Visible = false;
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
                     label11.Visible = false;
@@ -279,7 +279,7 @@ namespace Online_Clinic
             }
             else
             {
-                pictureBox4.Visible = true;
+               // pictureBox4.Visible = true;
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
                     label11.Visible = false;
