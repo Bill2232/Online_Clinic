@@ -101,7 +101,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(234, 40);
             this.label2.TabIndex = 2;
-            this.label2.Text = "now go back to sign in whith\r\n                  your account";
+            this.label2.Text = "now go back to sign in whith\r\n            your account";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // kryptonButton2
@@ -183,6 +183,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Online Clinic";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

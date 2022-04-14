@@ -21,8 +21,6 @@ namespace Online_Clinic
             {
                 activeForm.Close();
             }
-            //ActivateButton(btnSender);
-
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -83,6 +81,21 @@ namespace Online_Clinic
         {
             OpenChildForm(new Forms.Settings(), sender);
             pictureBox3.Image = pictureBox5.Image;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form7_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void kryptonButton2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

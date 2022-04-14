@@ -34,5 +34,10 @@ namespace Online_Clinic
             Form4 a = new Form4();
             a.Show();
         }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -28,5 +28,10 @@ namespace Online_Clinic
             Form5 a = new Form5();
             a.Show();
         }
+
+        private void Form4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

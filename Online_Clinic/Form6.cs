@@ -28,5 +28,10 @@ namespace Online_Clinic
             Form7 a = new Form7();
             a.Show();
         }
+
+        private void Form6_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
