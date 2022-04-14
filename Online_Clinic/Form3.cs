@@ -147,16 +147,16 @@ namespace Online_Clinic
                 if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
                     label6.ForeColor = Color.Red;
 
-            //    if (textBox6.Text == "")
-          //          label8.ForeColor = Color.Red;
+                if (kryptonTextBox8.Text == "")
+                    label7.ForeColor = Color.Red;
 
-              //  if (textBox4.Text != textBox5.Text && textBox4.Text != "")
-              //  {
-               //     label10.Visible = true;
-                //    label9.Visible = false;
-                 //   label4.ForeColor = Color.Red;
-                 //   label5.ForeColor = Color.Red;
-              //  }
+                if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+                {
+                    label10.Visible = true;
+                    label9.Visible = false;
+                    label4.ForeColor = Color.Red;
+                    label5.ForeColor = Color.Red;
+                }
               //  else if (textBox5.Text == textBox5.Text && textBox4.Text != "")
               //  {
                   //  label9.Visible = true;
