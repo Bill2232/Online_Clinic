@@ -184,8 +184,8 @@ namespace Online_Clinic
 
         private void kryptonTextBox7_TextChanged(object sender, EventArgs e)
         {
-            age = DateTime.Today.Year - dateTimePicker1.Value.Year;
-            label6.ForeColor = Color.Black;
+            //age = DateTime.Today.Year - dateTimePicker1.Value.Year;
+            //label6.ForeColor = Color.Black;
         }
 
         private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
