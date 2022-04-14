@@ -11,7 +11,7 @@ using ComponentFactory.Krypton.Toolkit;
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
-
+//test
 namespace Online_Clinic
 {
     public partial class Form3 : KryptonForm
@@ -123,17 +123,17 @@ namespace Online_Clinic
                 }
 
             }
-          //  else
-          //  {
-           //     MessageBox.Show("you have Complete the fields");
-             //   if (textBox1.Text == "")
-            //        label1.ForeColor = Color.Red;
+            else
+            {
+                MessageBox.Show("you have Complete the fields");
+                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" )
+                    label2.ForeColor = Color.Red;
 
-             //   if (textBox2.Text == "")
-            //        label2.ForeColor = Color.Red;
+                if (kryptonTextBox2.Text == "")
+                    label1.ForeColor = Color.Red;
 
-            //    if (textBox3.Text == "")
-            //        label3.ForeColor = Color.Red;
+                if (textBox3.Text == "")
+                    label3.ForeColor = Color.Red;
 
             //    if (textBox4.Text == "")
              //       label4.ForeColor = Color.Red;
@@ -163,12 +163,12 @@ namespace Online_Clinic
                  //   label10.Visible = false;
                //     label4.ForeColor = Color.Green;
                //     label5.ForeColor = Color.Green;
-             //   }
+             //  }
 
 
 
 
-           // }
+            }
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
