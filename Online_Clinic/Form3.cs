@@ -262,31 +262,31 @@ namespace Online_Clinic
             if (kryptonTextBox2.Text.Contains('@') && kryptonTextBox2.Text.Contains("."))
             {
 
-              //  pictureBox4.Visible = false;
+              
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
-                    label11.Visible = false;
+                    label10.Visible = false;
                     Email_available_check = true;
                 }
 
                 else
                 {
-                    label11.Visible = true;
+                    label10.Visible = true;
                     Email_available_check = false;
                 }
                 Valid_email = true;
             }
             else
             {
-               // pictureBox4.Visible = true;
+               
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
-                    label11.Visible = false;
+                    label10.Visible = false;
                     Email_available_check = true;
                 }
                 else
                 {
-                    label11.Visible = true;
+                    label10.Visible = true;
                     Email_available_check = false;
                 }
                 Valid_email = false;
