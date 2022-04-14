@@ -11,7 +11,7 @@ using ComponentFactory.Krypton.Toolkit;
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
-//test
+
 namespace Online_Clinic
 {
     public partial class Form3 : KryptonForm
