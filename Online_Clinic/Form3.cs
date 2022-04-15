@@ -302,7 +302,11 @@ namespace Online_Clinic
         {
             label1.ForeColor = Color.Black;
             if (kryptonTextBox2.Text == "Enter your email.")
+            {
+                kryptonTextBox2.AlwaysActive = true;
                 kryptonTextBox2.Text = "";
+            }
+          
             
         }
 
@@ -317,7 +321,11 @@ namespace Online_Clinic
         {
             label2.ForeColor = Color.Black;
             if (kryptonTextBox3.Text == "Last name")
+            {
+                kryptonTextBox3.AlwaysActive = true;
                 kryptonTextBox3.Text = "";
+            }
+            
            
         }
 
@@ -326,7 +334,12 @@ namespace Online_Clinic
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
             if (kryptonTextBox4.Text == "Create a password.")
+            {
                 kryptonTextBox4.Text = "";
+                kryptonTextBox4.AlwaysActive = true;
+
+            }
+
         }
 
         private void kryptonTextBox5_Enter(object sender, EventArgs e)
@@ -335,21 +348,35 @@ namespace Online_Clinic
             label4.ForeColor = Color.Black;
             
                  if (kryptonTextBox5.Text == "Enter the password againe.")
+            {
+                kryptonTextBox5.AlwaysActive = true;
                 kryptonTextBox5.Text = "";
+            }
+           
         }
 
         private void kryptonTextBox6_Enter(object sender, EventArgs e)
         {
             label5.ForeColor = Color.Black;
             if (kryptonTextBox6.Text == "DD")
+            {
                 kryptonTextBox6.Text = "";
+                kryptonTextBox6.AlwaysActive = true;
+
+            }
+
         }
 
         private void kryptonTextBox7_Enter(object sender, EventArgs e)
         {
+            
             label5.ForeColor = Color.Black;
             if (kryptonTextBox7.Text == "YYYY")
+            {
+                kryptonTextBox7.AlwaysActive = true;
                 kryptonTextBox7.Text = "";
+            }
+               
         }
 
         private void kryptonTextBox8_Enter(object sender, EventArgs e)
