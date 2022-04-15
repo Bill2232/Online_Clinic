@@ -52,6 +52,7 @@ namespace Online_Clinic
         {
             OpenChildForm(new Forms.Overview(), sender);
             pictureBox3.Image = pictureBox8.Image;
+            label5.Visible = true;
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -104,6 +105,26 @@ namespace Online_Clinic
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
