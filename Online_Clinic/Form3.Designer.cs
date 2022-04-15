@@ -176,6 +176,7 @@
             this.kryptonTextBox6.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox6.TabIndex = 29;
             this.kryptonTextBox6.Text = "DD";
+            this.kryptonTextBox6.TextChanged += new System.EventHandler(this.kryptonTextBox6_TextChanged);
             this.kryptonTextBox6.Enter += new System.EventHandler(this.kryptonTextBox6_Enter);
             // 
             // label4
@@ -225,6 +226,7 @@
             this.kryptonTextBox5.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox5.TabIndex = 26;
             this.kryptonTextBox5.Text = "Enter the password againe.";
+            this.kryptonTextBox5.TextChanged += new System.EventHandler(this.kryptonTextBox5_TextChanged);
             this.kryptonTextBox5.Enter += new System.EventHandler(this.kryptonTextBox5_Enter);
             this.kryptonTextBox5.Leave += new System.EventHandler(this.kryptonTextBox5_Leave);
             // 
@@ -732,6 +734,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Online Clinic";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -186,10 +186,7 @@ namespace Online_Clinic
             //label6.ForeColor = Color.Black;
         }
 
-        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            label5.ForeColor = Color.Black;
-        }
+        
 
         private void kryptonTextBox6_TextChanged(object sender, EventArgs e)
         {
@@ -454,7 +451,7 @@ namespace Online_Clinic
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
             }
-            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
             {
                 password_macth = true;
                 label12.Visible = false;
@@ -475,7 +472,7 @@ namespace Online_Clinic
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
             }
-            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "" )
             {
                 password_macth = true;
                 label12.Visible = false;
