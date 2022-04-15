@@ -125,6 +125,8 @@
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton2.StateCommon.Back.ColorAngle = 45F;
+            this.kryptonButton2.StateCommon.Back.Image = global::Online_Clinic.Properties.Resources.right_arrow__2_;
+            this.kryptonButton2.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton2.StateCommon.Border.ColorAngle = 45F;
@@ -139,6 +141,7 @@
             this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
             this.kryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
             this.kryptonButton2.StatePressed.Back.ColorAngle = 135F;
+            this.kryptonButton2.StatePressed.Back.Image = global::Online_Clinic.Properties.Resources.right_arrow__1_;
             this.kryptonButton2.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
             this.kryptonButton2.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
             this.kryptonButton2.StatePressed.Border.ColorAngle = 135F;
@@ -151,6 +154,7 @@
             this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton2.StateTracking.Back.ColorAngle = 45F;
+            this.kryptonButton2.StateTracking.Back.Image = global::Online_Clinic.Properties.Resources.right_arrow__1_;
             this.kryptonButton2.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton2.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton2.StateTracking.Border.ColorAngle = 45F;
@@ -162,7 +166,7 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton2.TabIndex = 6;
-            this.kryptonButton2.Values.Text = "<-";
+            this.kryptonButton2.Values.Text = "";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // Form5
