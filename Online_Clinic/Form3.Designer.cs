@@ -651,7 +651,7 @@ namespace Online_Clinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(844, 485);
+            this.ClientSize = new System.Drawing.Size(834, 759);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
@@ -682,8 +682,8 @@ namespace Online_Clinic
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonTextBox1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(843, 524);
-            this.MinimumSize = new System.Drawing.Size(843, 524);
+            this.MaximumSize = new System.Drawing.Size(850, 798);
+            this.MinimumSize = new System.Drawing.Size(850, 798);
             this.Name = "Form3";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

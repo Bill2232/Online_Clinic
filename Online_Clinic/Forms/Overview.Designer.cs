@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -36,7 +39,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -61,10 +64,13 @@
             this.guna2ShadowPanel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2ShadowPanel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -73,6 +79,7 @@
             this.guna2ShadowPanel9.SuspendLayout();
             this.guna2ShadowPanel11.SuspendLayout();
             this.guna2ShadowPanel13.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +119,41 @@
             this.panel1.Size = new System.Drawing.Size(678, 431);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(210, 75);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 28);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "Free time";
+            // 
+            // guna2ShadowPanel16
+            // 
+            this.guna2ShadowPanel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel16.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel16.Location = new System.Drawing.Point(187, 76);
+            this.guna2ShadowPanel16.Name = "guna2ShadowPanel16";
+            this.guna2ShadowPanel16.Radius = 2;
+            this.guna2ShadowPanel16.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel16.ShadowDepth = 0;
+            this.guna2ShadowPanel16.Size = new System.Drawing.Size(23, 22);
+            this.guna2ShadowPanel16.TabIndex = 35;
+            // 
+            // guna2ShadowPanel15
+            // 
+            this.guna2ShadowPanel15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel15.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel15.Location = new System.Drawing.Point(30, 76);
+            this.guna2ShadowPanel15.Name = "guna2ShadowPanel15";
+            this.guna2ShadowPanel15.Radius = 2;
+            this.guna2ShadowPanel15.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel15.ShadowDepth = 0;
+            this.guna2ShadowPanel15.Size = new System.Drawing.Size(23, 22);
+            this.guna2ShadowPanel15.TabIndex = 4;
             // 
             // label16
             // 
@@ -189,19 +231,6 @@
             this.label10.Size = new System.Drawing.Size(38, 28);
             this.label10.TabIndex = 19;
             this.label10.Text = "Sat";
-            // 
-            // guna2ShadowPanel2
-            // 
-            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 216);
-            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
-            this.guna2ShadowPanel2.Radius = 2;
-            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.ShadowDepth = 0;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(18, 76);
-            this.guna2ShadowPanel2.TabIndex = 3;
             // 
             // label18
             // 
@@ -340,6 +369,19 @@
             this.guna2ShadowPanel8.ShadowDepth = 0;
             this.guna2ShadowPanel8.Size = new System.Drawing.Size(18, 292);
             this.guna2ShadowPanel8.TabIndex = 28;
+            // 
+            // guna2ShadowPanel2
+            // 
+            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.Radius = 2;
+            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel2.ShadowDepth = 0;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel2.TabIndex = 3;
             // 
             // guna2ShadowPanel1
             // 
@@ -497,54 +539,102 @@
             this.guna2ShadowPanel14.Size = new System.Drawing.Size(18, 76);
             this.guna2ShadowPanel14.TabIndex = 3;
             // 
-            // guna2ShadowPanel15
-            // 
-            this.guna2ShadowPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel15.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel15.Location = new System.Drawing.Point(30, 76);
-            this.guna2ShadowPanel15.Name = "guna2ShadowPanel15";
-            this.guna2ShadowPanel15.Radius = 2;
-            this.guna2ShadowPanel15.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel15.ShadowDepth = 0;
-            this.guna2ShadowPanel15.Size = new System.Drawing.Size(23, 22);
-            this.guna2ShadowPanel15.TabIndex = 4;
-            // 
-            // guna2ShadowPanel16
-            // 
-            this.guna2ShadowPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel16.FillColor = System.Drawing.Color.Silver;
-            this.guna2ShadowPanel16.Location = new System.Drawing.Point(187, 76);
-            this.guna2ShadowPanel16.Name = "guna2ShadowPanel16";
-            this.guna2ShadowPanel16.Radius = 2;
-            this.guna2ShadowPanel16.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel16.ShadowDepth = 0;
-            this.guna2ShadowPanel16.Size = new System.Drawing.Size(23, 22);
-            this.guna2ShadowPanel16.TabIndex = 35;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(210, 75);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 28);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "Free time";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.kryptonButton1);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label20);
             this.panel2.Location = new System.Drawing.Point(714, 18);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(375, 431);
             this.panel2.TabIndex = 1;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(15, 22);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(147, 23);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "APPROVAL REQUESTS";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Font = new System.Drawing.Font("Poppins", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkGray;
+            this.label21.Location = new System.Drawing.Point(5, 71);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(78, 84);
+            this.label21.TabIndex = 29;
+            this.label21.Text = "13";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Gray;
+            this.label22.Location = new System.Drawing.Point(15, 134);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(169, 19);
+            this.label22.TabIndex = 30;
+            this.label22.Text = "Requests Waiting To Approve";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Gray;
+            this.label23.Location = new System.Drawing.Point(200, 132);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(115, 19);
+            this.label23.TabIndex = 32;
+            this.label23.Text = "Requests Approved";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Font = new System.Drawing.Font("Poppins", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DarkGray;
+            this.label24.Location = new System.Drawing.Point(190, 69);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 84);
+            this.label24.TabIndex = 31;
+            this.label24.Text = "6";
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Location = new System.Drawing.Point(59, 213);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(112, 35);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 20;
+            this.kryptonButton1.StateCommon.Border.Width = 1;
+            this.kryptonButton1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.TabIndex = 33;
+            this.kryptonButton1.Values.Text = "More";
+            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1101, 707);
             this.Controls.Add(this.panel2);
@@ -562,6 +652,8 @@
             this.guna2ShadowPanel9.ResumeLayout(false);
             this.guna2ShadowPanel11.ResumeLayout(false);
             this.guna2ShadowPanel13.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -605,5 +697,11 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel13;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel14;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }
