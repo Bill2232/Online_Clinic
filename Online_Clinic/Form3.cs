@@ -101,7 +101,7 @@ namespace Online_Clinic
                         UseDefaultCredentials = false,
                         Credentials = new NetworkCredential("support@awd.somee.com", "Jasba@ya%dee#")
                     };
-                    client.Send("support@awd.somee.com", email, "Welcome to AWD ", "HI " + name + "\nThank you for using AWD");
+                    client.Send("support@awd.somee.com", email, "Welcome to Online Clinc", "HI " + name + "\nThank you for using AWD");
                     //
 
 

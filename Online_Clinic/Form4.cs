@@ -23,6 +23,7 @@ namespace Online_Clinic
         bool Email_available_check = false;
         bool Valid_email = false;
         bool gander_Checked = false;
+        int age = 0;
 
         public Form4()
         {
@@ -38,7 +39,7 @@ namespace Online_Clinic
         {
             //Form5 a = new Form5();
             // a.Show();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + textBox6.Text + "'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox2.Text + "'", con);
             DataTable mail = new DataTable();
             sda.Fill(mail);
             if (//comboBox1.Text != ""
@@ -65,12 +66,11 @@ namespace Online_Clinic
                 {
                     string doctorID = Guid.NewGuid().ToString("N");
                     string name = kryptonTextBox1.Text.ToString() + "  "+kryptonTextBox3.Text.ToString();
-                    string specialization = comboBox1.Text;
-                    string email = textBox6.Text;
+                    string email = kryptonTextBox2.Text;
 
                     con.Open();
                     cmd = new SqlCommand("insert into doctor ([doctorID],[name],specialization,certificate_name,email,certificate,password,[phone_secretary],verificationCode)values" +
-                        "('" + doctorID + "','" + name + "','" + specialization + "','" + textBox3.Text + "','" + textBox6.Text + "','" + pictureBox1 + "','" + textBox5.Text + "','" + textBox2.Text + "','" + "unverified" + "')", con);
+                        "('" + doctorID + "','" + name + "','" + "null" + "','" + "null" + "','" + email + "','" + "null" + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
                     cmd.ExecuteNonQuery();
                     con.Close();
                     //
@@ -83,7 +83,7 @@ namespace Online_Clinic
                         UseDefaultCredentials = false,
                         Credentials = new NetworkCredential("support@awd.somee.com", "Jasba@ya%dee#")
                     };
-                    client.Send("support@awd.somee.com", email, "Welcome to AWD ", "HI " + name + "\nThank you for using AWD");
+                    client.Send("support@awd.somee.com", email, "Welcome to Online Clinic", "HI " + name + "\nThank you for using AWD");
                     //
 
                     //
@@ -94,41 +94,39 @@ namespace Online_Clinic
                     f.Show();
                     this.Hide();
                 }
-                else
-                    label12.Visible = true;
+               
             }
-            else
-                MessageBox.Show("you have to complete all feilds");
-
-
-            if (password_macth != true && textBox4.Text != "")
+            
+            if (password_macth != true || kryptonTextBox4.Text != "")
             {
-                label10.Visible = true;
-                label9.Visible = false;
-                label6.ForeColor = Color.Red;
-                label7.ForeColor = Color.Red;
-            }
-            else if (password_macth == true && textBox4.Text != "")
-            {
-                label9.Visible = true;
-                label10.Visible = false;
-                label6.ForeColor = Color.Green;
-                label7.ForeColor = Color.Green;
-            }
-            if (textBox1.Text == "")
-                label1.ForeColor = Color.Red;
-            if (comboBox1.Text == "")
-                label2.ForeColor = Color.Red;
-            if (textBox3.Text == "")
-                label4.ForeColor = Color.Red;
-            if (textBox2.Text == "")
                 label3.ForeColor = Color.Red;
-            if (textBox4.Text == "")
-                label7.ForeColor = Color.Red;
-            if (textBox5.Text == "")
+            }
+
+            if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY" || kryptonTextBox7.Text.Length != 4 || Convert.ToInt32(kryptonTextBox6.Text) > 32)
+                label5.ForeColor = Color.Red;
+            if (age < 16)
+                label5.ForeColor = Color.Red;
+
+            if (radioButton1.Checked == false && radioButton2.Checked == false)
                 label6.ForeColor = Color.Red;
-        
-    }
+
+            if (kryptonTextBox8.Text == "" || kryptonTextBox8.Text == "Enter your phone number.")
+                label7.ForeColor = Color.Red;
+
+            if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
+            {
+                label3.ForeColor = Color.Red;
+                label4.ForeColor = Color.Red;
+            }
+            else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            {
+                label12.Visible = true;
+                label12.Text = "password macth";
+                label12.ForeColor = Color.Green;
+
+            }
+
+        }
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
         {
