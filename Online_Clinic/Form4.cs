@@ -66,7 +66,7 @@ namespace Online_Clinic
                 if (mail.Rows[0][0].ToString() == "0")
                 {
                     string doctorID = Guid.NewGuid().ToString("N");
-                    string name = kryptonTextBox1.Text.ToString() + "  "+kryptonTextBox3.Text.ToString();
+                    string name = kryptonTextBox1.Text.ToString() + "  " + kryptonTextBox3.Text.ToString();
                     string email = kryptonTextBox2.Text;
 
                     con.Open();
@@ -95,9 +95,9 @@ namespace Online_Clinic
                     f.Show();
                     this.Hide();
                 }
-               
+
             }
-            
+
             if (password_macth != true || kryptonTextBox4.Text != "")
             {
                 label3.ForeColor = Color.Red;
@@ -189,5 +189,5 @@ namespace Online_Clinic
             label2.ForeColor = Color.Black;
         }
     }
-    }
+    
 }
