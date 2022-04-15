@@ -30,17 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label15 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label14 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label18 = new System.Windows.Forms.Label();
@@ -52,35 +46,47 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.guna2ShadowPanel8.SuspendLayout();
+            this.guna2ShadowPanel1.SuspendLayout();
+            this.guna2ShadowPanel4.SuspendLayout();
+            this.guna2ShadowPanel6.SuspendLayout();
+            this.guna2ShadowPanel9.SuspendLayout();
+            this.guna2ShadowPanel11.SuspendLayout();
+            this.guna2ShadowPanel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.guna2ShadowPanel16);
+            this.panel1.Controls.Add(this.guna2ShadowPanel15);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.guna2ShadowPanel7);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.guna2ShadowPanel6);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.guna2ShadowPanel5);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.guna2ShadowPanel4);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.guna2ShadowPanel3);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.guna2ShadowPanel1);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.guna2ShadowPanel2);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label9);
@@ -90,20 +96,21 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.linkLabel7);
-            this.panel1.Controls.Add(this.linkLabel6);
-            this.panel1.Controls.Add(this.linkLabel5);
-            this.panel1.Controls.Add(this.linkLabel2);
-            this.panel1.Controls.Add(this.linkLabel3);
-            this.panel1.Controls.Add(this.linkLabel4);
-            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.guna2ShadowPanel8);
+            this.panel1.Controls.Add(this.guna2ShadowPanel1);
+            this.panel1.Controls.Add(this.guna2ShadowPanel4);
+            this.panel1.Controls.Add(this.guna2ShadowPanel6);
+            this.panel1.Controls.Add(this.guna2ShadowPanel9);
+            this.panel1.Controls.Add(this.guna2ShadowPanel11);
+            this.panel1.Controls.Add(this.guna2ShadowPanel13);
             this.panel1.Font = new System.Drawing.Font("Poppins", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(23, 23);
+            this.panel1.Location = new System.Drawing.Point(18, 18);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(678, 431);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label16
             // 
@@ -116,18 +123,6 @@
             this.label16.TabIndex = 25;
             this.label16.Text = "Fri";
             // 
-            // guna2ShadowPanel7
-            // 
-            this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel7.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel7.Location = new System.Drawing.Point(589, 369);
-            this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
-            this.guna2ShadowPanel7.Radius = 2;
-            this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel7.ShadowDepth = 0;
-            this.guna2ShadowPanel7.Size = new System.Drawing.Size(17, 32);
-            this.guna2ShadowPanel7.TabIndex = 4;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -138,18 +133,6 @@
             this.label15.Size = new System.Drawing.Size(41, 28);
             this.label15.TabIndex = 24;
             this.label15.Text = "Thu";
-            // 
-            // guna2ShadowPanel6
-            // 
-            this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel6.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel6.Location = new System.Drawing.Point(505, 312);
-            this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
-            this.guna2ShadowPanel6.Radius = 2;
-            this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel6.ShadowDepth = 0;
-            this.guna2ShadowPanel6.Size = new System.Drawing.Size(17, 89);
-            this.guna2ShadowPanel6.TabIndex = 4;
             // 
             // label14
             // 
@@ -162,18 +145,6 @@
             this.label14.TabIndex = 23;
             this.label14.Text = "Wed";
             // 
-            // guna2ShadowPanel5
-            // 
-            this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel5.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel5.Location = new System.Drawing.Point(427, 296);
-            this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            this.guna2ShadowPanel5.Radius = 2;
-            this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel5.ShadowDepth = 0;
-            this.guna2ShadowPanel5.Size = new System.Drawing.Size(17, 105);
-            this.guna2ShadowPanel5.TabIndex = 4;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -184,18 +155,6 @@
             this.label13.Size = new System.Drawing.Size(41, 28);
             this.label13.TabIndex = 22;
             this.label13.Text = "Tue";
-            // 
-            // guna2ShadowPanel4
-            // 
-            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(335, 356);
-            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            this.guna2ShadowPanel4.Radius = 2;
-            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel4.ShadowDepth = 0;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(17, 45);
-            this.guna2ShadowPanel4.TabIndex = 4;
             // 
             // label12
             // 
@@ -208,18 +167,6 @@
             this.label12.TabIndex = 21;
             this.label12.Text = "Mon";
             // 
-            // guna2ShadowPanel3
-            // 
-            this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(248, 236);
-            this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
-            this.guna2ShadowPanel3.Radius = 2;
-            this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel3.ShadowDepth = 0;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(17, 165);
-            this.guna2ShadowPanel3.TabIndex = 4;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -230,18 +177,6 @@
             this.label11.Size = new System.Drawing.Size(41, 28);
             this.label11.TabIndex = 20;
             this.label11.Text = "Sun";
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(157, 321);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 2;
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.ShadowDepth = 0;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(17, 80);
-            this.guna2ShadowPanel1.TabIndex = 4;
             // 
             // label10
             // 
@@ -257,13 +192,14 @@
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.SandyBrown;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(73, 267);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 216);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 2;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 0;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(17, 134);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(18, 76);
             this.guna2ShadowPanel2.TabIndex = 3;
             // 
             // label18
@@ -271,7 +207,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(25, 74);
+            this.label18.Location = new System.Drawing.Point(52, 75);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(100, 28);
             this.label18.TabIndex = 27;
@@ -368,83 +304,6 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "0";
             // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel7.Location = new System.Drawing.Point(21, 96);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel7.TabIndex = 11;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "                                                                             ";
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel6.Location = new System.Drawing.Point(21, 137);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel6.TabIndex = 10;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "                                                                             ";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel5.Location = new System.Drawing.Point(21, 179);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel5.TabIndex = 9;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "                                                                             ";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel2.Location = new System.Drawing.Point(21, 223);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel2.TabIndex = 6;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "                                                                             ";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel3.Location = new System.Drawing.Point(21, 267);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel3.TabIndex = 7;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "                                                                             ";
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel4.Location = new System.Drawing.Point(21, 312);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel4.TabIndex = 8;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "                                                                             ";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.Location = new System.Drawing.Point(21, 356);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(638, 51);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "                                                                             ";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -468,6 +327,210 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Good Morning,";
             // 
+            // guna2ShadowPanel8
+            // 
+            this.guna2ShadowPanel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel8.Controls.Add(this.guna2ShadowPanel2);
+            this.guna2ShadowPanel8.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel8.Location = new System.Drawing.Point(72, 109);
+            this.guna2ShadowPanel8.Name = "guna2ShadowPanel8";
+            this.guna2ShadowPanel8.Radius = 2;
+            this.guna2ShadowPanel8.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel8.ShadowDepth = 0;
+            this.guna2ShadowPanel8.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel8.TabIndex = 28;
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel3);
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(157, 109);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.Radius = 2;
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.ShadowDepth = 0;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel1.TabIndex = 29;
+            // 
+            // guna2ShadowPanel3
+            // 
+            this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
+            this.guna2ShadowPanel3.Radius = 2;
+            this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel3.ShadowDepth = 0;
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel3.TabIndex = 3;
+            // 
+            // guna2ShadowPanel4
+            // 
+            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel4.Controls.Add(this.guna2ShadowPanel5);
+            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(247, 109);
+            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
+            this.guna2ShadowPanel4.Radius = 2;
+            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel4.ShadowDepth = 0;
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel4.TabIndex = 30;
+            // 
+            // guna2ShadowPanel5
+            // 
+            this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel5.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel5.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
+            this.guna2ShadowPanel5.Radius = 2;
+            this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel5.ShadowDepth = 0;
+            this.guna2ShadowPanel5.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel5.TabIndex = 3;
+            // 
+            // guna2ShadowPanel6
+            // 
+            this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel6.Controls.Add(this.guna2ShadowPanel7);
+            this.guna2ShadowPanel6.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel6.Location = new System.Drawing.Point(334, 109);
+            this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
+            this.guna2ShadowPanel6.Radius = 2;
+            this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel6.ShadowDepth = 0;
+            this.guna2ShadowPanel6.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel6.TabIndex = 31;
+            // 
+            // guna2ShadowPanel7
+            // 
+            this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel7.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel7.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
+            this.guna2ShadowPanel7.Radius = 2;
+            this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel7.ShadowDepth = 0;
+            this.guna2ShadowPanel7.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel7.TabIndex = 3;
+            // 
+            // guna2ShadowPanel9
+            // 
+            this.guna2ShadowPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel9.Controls.Add(this.guna2ShadowPanel10);
+            this.guna2ShadowPanel9.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel9.Location = new System.Drawing.Point(426, 109);
+            this.guna2ShadowPanel9.Name = "guna2ShadowPanel9";
+            this.guna2ShadowPanel9.Radius = 2;
+            this.guna2ShadowPanel9.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel9.ShadowDepth = 0;
+            this.guna2ShadowPanel9.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel9.TabIndex = 32;
+            // 
+            // guna2ShadowPanel10
+            // 
+            this.guna2ShadowPanel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel10.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel10.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel10.Name = "guna2ShadowPanel10";
+            this.guna2ShadowPanel10.Radius = 2;
+            this.guna2ShadowPanel10.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel10.ShadowDepth = 0;
+            this.guna2ShadowPanel10.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel10.TabIndex = 3;
+            // 
+            // guna2ShadowPanel11
+            // 
+            this.guna2ShadowPanel11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel11.Controls.Add(this.guna2ShadowPanel12);
+            this.guna2ShadowPanel11.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel11.Location = new System.Drawing.Point(504, 109);
+            this.guna2ShadowPanel11.Name = "guna2ShadowPanel11";
+            this.guna2ShadowPanel11.Radius = 2;
+            this.guna2ShadowPanel11.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel11.ShadowDepth = 0;
+            this.guna2ShadowPanel11.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel11.TabIndex = 33;
+            // 
+            // guna2ShadowPanel12
+            // 
+            this.guna2ShadowPanel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel12.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel12.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel12.Name = "guna2ShadowPanel12";
+            this.guna2ShadowPanel12.Radius = 2;
+            this.guna2ShadowPanel12.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel12.ShadowDepth = 0;
+            this.guna2ShadowPanel12.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel12.TabIndex = 3;
+            // 
+            // guna2ShadowPanel13
+            // 
+            this.guna2ShadowPanel13.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel13.Controls.Add(this.guna2ShadowPanel14);
+            this.guna2ShadowPanel13.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel13.Location = new System.Drawing.Point(589, 109);
+            this.guna2ShadowPanel13.Name = "guna2ShadowPanel13";
+            this.guna2ShadowPanel13.Radius = 2;
+            this.guna2ShadowPanel13.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel13.ShadowDepth = 0;
+            this.guna2ShadowPanel13.Size = new System.Drawing.Size(18, 292);
+            this.guna2ShadowPanel13.TabIndex = 34;
+            // 
+            // guna2ShadowPanel14
+            // 
+            this.guna2ShadowPanel14.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ShadowPanel14.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel14.Location = new System.Drawing.Point(0, 216);
+            this.guna2ShadowPanel14.Name = "guna2ShadowPanel14";
+            this.guna2ShadowPanel14.Radius = 2;
+            this.guna2ShadowPanel14.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel14.ShadowDepth = 0;
+            this.guna2ShadowPanel14.Size = new System.Drawing.Size(18, 76);
+            this.guna2ShadowPanel14.TabIndex = 3;
+            // 
+            // guna2ShadowPanel15
+            // 
+            this.guna2ShadowPanel15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel15.FillColor = System.Drawing.Color.SandyBrown;
+            this.guna2ShadowPanel15.Location = new System.Drawing.Point(30, 76);
+            this.guna2ShadowPanel15.Name = "guna2ShadowPanel15";
+            this.guna2ShadowPanel15.Radius = 2;
+            this.guna2ShadowPanel15.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel15.ShadowDepth = 0;
+            this.guna2ShadowPanel15.Size = new System.Drawing.Size(23, 22);
+            this.guna2ShadowPanel15.TabIndex = 4;
+            // 
+            // guna2ShadowPanel16
+            // 
+            this.guna2ShadowPanel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel16.FillColor = System.Drawing.Color.Silver;
+            this.guna2ShadowPanel16.Location = new System.Drawing.Point(187, 76);
+            this.guna2ShadowPanel16.Name = "guna2ShadowPanel16";
+            this.guna2ShadowPanel16.Radius = 2;
+            this.guna2ShadowPanel16.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel16.ShadowDepth = 0;
+            this.guna2ShadowPanel16.Size = new System.Drawing.Size(23, 22);
+            this.guna2ShadowPanel16.TabIndex = 35;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(210, 75);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 28);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "Free time";
+            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +545,13 @@
             this.Text = "Overview";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.guna2ShadowPanel8.ResumeLayout(false);
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel4.ResumeLayout(false);
+            this.guna2ShadowPanel6.ResumeLayout(false);
+            this.guna2ShadowPanel9.ResumeLayout(false);
+            this.guna2ShadowPanel11.ResumeLayout(false);
+            this.guna2ShadowPanel13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,13 +565,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -514,12 +577,22 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel8;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
+        private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel16;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel15;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel9;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel10;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel11;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel12;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel13;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel14;
     }
 }
