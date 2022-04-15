@@ -115,22 +115,12 @@ namespace Online_Clinic
             //  a.Show();
         }
 
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void kryptonTextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -152,21 +142,27 @@ namespace Online_Clinic
             Application.Exit();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void kryptonTextBox1_Enter(object sender, EventArgs e)
         {
             if (kryptonTextBox1.Text == "Enter your email address")
-                kryptonTextBox1.Text = "tests@.com";
+                kryptonTextBox1.Text = "";
         }
 
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter the password")
-                kryptonTextBox2.Text = "test";
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
+            if (kryptonTextBox1.Text == "Enter the password")
+                kryptonTextBox1.Text = "";
+            
         }
     }
 }
