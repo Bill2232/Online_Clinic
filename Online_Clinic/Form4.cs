@@ -24,6 +24,7 @@ namespace Online_Clinic
         bool Valid_email = false;
         bool gander_Checked = false;
         int age = 0;
+        string gander;
 
         public Form4()
         {
@@ -168,5 +169,25 @@ namespace Online_Clinic
                 kryptonTextBox1.Text = "";
             label2.ForeColor = Color.Black;
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+            gander = "male";
+            gander_Checked = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+            gander = "female";
+            gander_Checked = true;
+        }
+
+        private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            label2.ForeColor = Color.Black;
+        }
+    }
     }
 }
