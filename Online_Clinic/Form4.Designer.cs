@@ -58,8 +58,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -244,6 +246,8 @@
             this.kryptonTextBox8.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox8.TabIndex = 63;
             this.kryptonTextBox8.Text = "Enter your phone number.";
+            this.kryptonTextBox8.Enter += new System.EventHandler(this.kryptonTextBox8_Enter);
+            this.kryptonTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox8_KeyPress);
             // 
             // radioButton2
             // 
@@ -311,6 +315,7 @@
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBox2.TabIndex = 58;
             this.kryptonComboBox2.Text = "Month";
+            this.kryptonComboBox2.Enter += new System.EventHandler(this.kryptonComboBox2_Enter);
             // 
             // label5
             // 
@@ -342,6 +347,9 @@
             this.kryptonTextBox7.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox7.TabIndex = 56;
             this.kryptonTextBox7.Text = "YYYY";
+            this.kryptonTextBox7.Enter += new System.EventHandler(this.kryptonTextBox7_Enter);
+            this.kryptonTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox7_KeyPress);
+            this.kryptonTextBox7.Leave += new System.EventHandler(this.kryptonTextBox7_Leave);
             // 
             // kryptonTextBox6
             // 
@@ -362,6 +370,8 @@
             this.kryptonTextBox6.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox6.TabIndex = 55;
             this.kryptonTextBox6.Text = "DD";
+            this.kryptonTextBox6.Enter += new System.EventHandler(this.kryptonTextBox6_Enter);
+            this.kryptonTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox6_KeyPress);
             // 
             // label4
             // 
@@ -404,6 +414,9 @@
             this.kryptonTextBox5.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox5.TabIndex = 52;
             this.kryptonTextBox5.Text = "Enter the password againe.";
+            this.kryptonTextBox5.TextChanged += new System.EventHandler(this.kryptonTextBox5_TextChanged);
+            this.kryptonTextBox5.Enter += new System.EventHandler(this.kryptonTextBox5_Enter);
+            this.kryptonTextBox5.Leave += new System.EventHandler(this.kryptonTextBox5_Leave);
             // 
             // kryptonTextBox4
             // 
@@ -424,7 +437,9 @@
             this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox4.TabIndex = 51;
             this.kryptonTextBox4.Text = "Create a password.";
-            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox4_TextChanged_1);
+            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox4_TextChanged);
+            this.kryptonTextBox4.Enter += new System.EventHandler(this.kryptonTextBox4_Enter);
+            this.kryptonTextBox4.Leave += new System.EventHandler(this.kryptonTextBox4_Leave);
             // 
             // label1
             // 
@@ -468,6 +483,7 @@
             this.kryptonTextBox3.TabIndex = 48;
             this.kryptonTextBox3.Text = "Last name";
             this.kryptonTextBox3.TextChanged += new System.EventHandler(this.kryptonTextBox3_TextChanged);
+            this.kryptonTextBox3.Enter += new System.EventHandler(this.kryptonTextBox3_Enter);
             // 
             // kryptonTextBox2
             // 
@@ -488,6 +504,8 @@
             this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox2.TabIndex = 47;
             this.kryptonTextBox2.Text = "Enter your email.";
+            this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.kryptonTextBox2_Leave);
             // 
             // kryptonTextBox1
             // 
@@ -508,6 +526,7 @@
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox1.TabIndex = 46;
             this.kryptonTextBox1.Text = "First name";
+            this.kryptonTextBox1.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
             // 
             // label10
             // 
@@ -553,6 +572,20 @@
             this.pictureBox2.Size = new System.Drawing.Size(35, 28);
             this.pictureBox2.TabIndex = 70;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pictureBox1.BackgroundImage = global::Online_Clinic.Properties.Resources.view;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(554, 246);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox1.TabIndex = 74;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form4
             // 
@@ -601,6 +634,7 @@
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -636,5 +670,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

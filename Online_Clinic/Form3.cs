@@ -468,8 +468,6 @@ namespace Online_Clinic
             {
                 password_macth = false;
                 label12.Visible = false;
-                
-
             }
 
         }
@@ -482,9 +480,6 @@ namespace Online_Clinic
         private void kryptonTextBox6_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-            
-            //  e.Handled = char.IsDigit(e.KeyChar);
-
         }
 
         private void kryptonTextBox7_KeyPress(object sender, KeyPressEventArgs e)
