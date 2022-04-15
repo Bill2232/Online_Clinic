@@ -368,7 +368,10 @@ namespace Online_Clinic
             age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
             label6.ForeColor = Color.Black;
         }
+        private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
+        {
 
+        }
         private void kryptonTextBox1_TextChanged_1(object sender, EventArgs e)
         {
             if (kryptonTextBox1.Text == "First name")
