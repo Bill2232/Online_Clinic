@@ -159,7 +159,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(208, 727);
+            this.panelMenu.Size = new System.Drawing.Size(208, 829);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -461,7 +461,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 652);
+            this.panel1.Location = new System.Drawing.Point(0, 754);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 75);
             this.panel1.TabIndex = 9;
@@ -1028,7 +1028,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(208, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1117, 644);
+            this.panel2.Size = new System.Drawing.Size(1117, 746);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -1250,7 +1250,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(835, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(282, 644);
+            this.panel3.Size = new System.Drawing.Size(282, 746);
             this.panel3.TabIndex = 1;
             this.panel3.Visible = false;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
@@ -2068,7 +2068,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1325, 727);
+            this.ClientSize = new System.Drawing.Size(1325, 829);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelHeder);
             this.Controls.Add(this.panelMenu);

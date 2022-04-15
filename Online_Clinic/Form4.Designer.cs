@@ -422,6 +422,7 @@
             this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox4.TabIndex = 51;
             this.kryptonTextBox4.Text = "Create a password.";
+            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox4_TextChanged_1);
             // 
             // label1
             // 

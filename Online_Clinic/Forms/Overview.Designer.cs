@@ -64,6 +64,7 @@
             this.guna2ShadowPanel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label19 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -531,13 +532,22 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Free time";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(714, 18);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(375, 431);
+            this.panel2.TabIndex = 1;
+            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1101, 605);
+            this.ClientSize = new System.Drawing.Size(1101, 707);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(1117, 644);
@@ -594,5 +604,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel12;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel13;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel14;
+        private System.Windows.Forms.Panel panel2;
     }
 }
