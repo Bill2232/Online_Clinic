@@ -164,5 +164,10 @@ namespace Online_Clinic
                 kryptonTextBox2.Text = "";
             
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
