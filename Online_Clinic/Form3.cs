@@ -365,7 +365,7 @@ namespace Online_Clinic
         private void kryptonTextBox7_Leave(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
-            age = DateTime.Year - kryptonTextBox7.Text;
+            age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
             label6.ForeColor = Color.Black;
         }
     }
