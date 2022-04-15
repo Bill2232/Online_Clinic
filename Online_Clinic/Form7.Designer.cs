@@ -617,7 +617,7 @@
             // 
             // panelHeder
             // 
-            this.panelHeder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.panelHeder.BackColor = System.Drawing.SystemColors.Control;
             this.panelHeder.Controls.Add(this.pictureBox10);
             this.panelHeder.Controls.Add(this.kryptonTextBox1);
             this.panelHeder.Controls.Add(this.kryptonButton2);
@@ -2076,6 +2076,7 @@
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Online Clinic";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form7_FormClosed);
             this.Load += new System.EventHandler(this.Form7_Load);

@@ -16,5 +16,10 @@ namespace Online_Clinic.Forms
         {
             InitializeComponent();
         }
+
+        private void Patient_List_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
