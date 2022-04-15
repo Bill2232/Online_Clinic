@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +24,7 @@ namespace Online_Clinic
         bool Valid_email = false;
         bool gander_Checked = false;
         int age = 0;
+        string gander;
 
         public Form4()
         {
@@ -107,7 +108,7 @@ namespace Online_Clinic
             if (age < 16)
                 label5.ForeColor = Color.Red;
 
-            if (radioButton1.Checked == false && radioButton2.Checked == false)
+            if (gander_Checked==false)
                 label6.ForeColor = Color.Red;
 
             if (kryptonTextBox8.Text == "" || kryptonTextBox8.Text == "Enter your phone number.")
@@ -125,7 +126,10 @@ namespace Online_Clinic
                 label12.ForeColor = Color.Green;
 
             }
-
+            if(kryptonTextBox2.Text =="" || kryptonTextBox2.Text== "Enter your email.")
+                label1.ForeColor = Color.Red;
+            if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" || kryptonTextBox1.Text == "First name" || kryptonTextBox1.Text == "Last name")
+                label2.ForeColor = Color.Red;
         }
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
@@ -170,7 +174,9 @@ namespace Online_Clinic
         }
        private void  radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            label6.ForeColor = Color.Black;
+            gander = "female";
+            gander_Checked = true;
         }
         private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
         {
@@ -178,7 +184,9 @@ namespace Online_Clinic
         }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            label6.ForeColor = Color.Black;
+            gander = "male";
+            gander_Checked = true;
         }
         private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
         {
@@ -280,7 +288,7 @@ namespace Online_Clinic
                 kryptonTextBox5.UseSystemPasswordChar = true;
                 pictureBox2.Visible = true;
             }
-            if (pictureBox1.Visible == false && pictureBox2.Visible == false)
+            if (pictureBox3.Visible == false && pictureBox2.Visible == false)
                 pictureBox2.Visible = true;
         }
 
@@ -310,7 +318,7 @@ namespace Online_Clinic
             DateTime now = DateTime.Now;
             if (kryptonTextBox7.Text != "")
                 age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
-            label6.ForeColor = Color.Black;
+            label5.ForeColor = Color.Black;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -318,7 +326,7 @@ namespace Online_Clinic
             kryptonTextBox4.UseSystemPasswordChar = true;
             kryptonTextBox5.UseSystemPasswordChar = true;
             pictureBox2.Visible = true;
-            pictureBox1.Visible = false;
+            pictureBox3.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -326,14 +334,14 @@ namespace Online_Clinic
             kryptonTextBox4.UseSystemPasswordChar = false;
             kryptonTextBox5.UseSystemPasswordChar = false;
             pictureBox2.Visible = false;
-            pictureBox1.Visible = true;
+            pictureBox3.Visible = true;
         }
 
         private void kryptonTextBox5_Leave(object sender, EventArgs e)
         {
             if (kryptonTextBox5.Text == "" && kryptonTextBox4.Text == "")
             {
-                pictureBox1.Visible = false;
+                pictureBox3.Visible = false;
                 pictureBox2.Visible = false;
             }
             if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
@@ -357,7 +365,7 @@ namespace Online_Clinic
         {
             if (kryptonTextBox5.Text == "" && kryptonTextBox4.Text == "")
             {
-                pictureBox1.Visible = false;
+                pictureBox3.Visible = false;
                 pictureBox2.Visible = false;
             }
             if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox5.Text != "")
@@ -392,6 +400,14 @@ namespace Online_Clinic
         private void kryptonComboBox2_Enter(object sender, EventArgs e)
         {
             label5.ForeColor = Color.Black;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            kryptonTextBox4.UseSystemPasswordChar = true;
+            kryptonTextBox5.UseSystemPasswordChar = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = false;
         }
     }
     
