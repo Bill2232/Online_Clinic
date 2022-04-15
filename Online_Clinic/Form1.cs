@@ -160,8 +160,8 @@ namespace Online_Clinic
 
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter the password")
-                kryptonTextBox1.Text = "";
+            if (kryptonTextBox2.Text == "Enter the password")
+                kryptonTextBox2.Text = "";
             
         }
     }
