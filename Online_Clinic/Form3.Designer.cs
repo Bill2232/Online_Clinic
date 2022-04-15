@@ -540,11 +540,12 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 7.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(598, 162);
+            this.label10.Location = new System.Drawing.Point(598, 167);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(154, 19);
             this.label10.TabIndex = 72;
             this.label10.Text = "This email is already used!";
+            this.label10.Visible = false;
             // 
             // label11
             // 
@@ -557,17 +558,19 @@
             this.label11.TabIndex = 73;
             this.label11.Text = "Your password must be at least \r\n8 characters including Capital letters,\r\n number" +
     "s, and some samples!";
+            this.label11.Visible = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins", 7.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(598, 322);
+            this.label12.Location = new System.Drawing.Point(598, 328);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(154, 19);
             this.label12.TabIndex = 74;
             this.label12.Text = "Password does not match!";
+            this.label12.Visible = false;
             // 
             // pictureBox2
             // 
@@ -592,7 +595,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(851, 714);
+            this.ClientSize = new System.Drawing.Size(885, 714);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
