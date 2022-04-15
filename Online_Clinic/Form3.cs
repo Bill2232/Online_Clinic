@@ -393,7 +393,7 @@ namespace Online_Clinic
             kryptonTextBox8.AlwaysActive=true;
             label7.ForeColor = Color.Black;
             if (kryptonTextBox8.Text == "Enter your phone number.")
-             //   kryptonTextBox8.Text = "";
+                kryptonTextBox8.Text = "";
             
         }
 
