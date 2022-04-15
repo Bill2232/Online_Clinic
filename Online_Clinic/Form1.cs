@@ -105,7 +105,7 @@ namespace Online_Clinic
                          //   panel1.Visible = true;
                         //    panel2.BackColor = Color.Red;
                          //   panel2.Visible = true;
-                         //   label3.Visible = true;
+                            label3.Visible = true;
                          //   label3.ForeColor = Color.Red;
                         }
                         break;
@@ -122,7 +122,7 @@ namespace Online_Clinic
 
         private void kryptonTextBox1_TextChanged_1(object sender, EventArgs e)
         {
-
+            label3.Visible = false;
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
@@ -134,7 +134,8 @@ namespace Online_Clinic
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            
+            kryptonTextBox2.UseSystemPasswordChar = false;
         }
         
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -161,8 +162,13 @@ namespace Online_Clinic
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
             if (kryptonTextBox2.Text == "Enter the password")
+            {
                 kryptonTextBox2.Text = "";
-            
+                kryptonTextBox2.UseSystemPasswordChar = true;
+            }
+
+
+
         }
 
         private void label2_Click(object sender, EventArgs e)
