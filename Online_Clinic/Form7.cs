@@ -40,7 +40,9 @@ namespace Online_Clinic
 
         private void Form7_Load(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.Overview(), sender);
+            pictureBox3.Image = pictureBox8.Image;
+            label5.Visible = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
