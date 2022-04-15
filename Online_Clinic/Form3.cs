@@ -325,22 +325,31 @@ namespace Online_Clinic
         {
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
+            if (kryptonTextBox4.Text == "Create a password.")
+                kryptonTextBox4.Text = "";
         }
 
         private void kryptonTextBox5_Enter(object sender, EventArgs e)
         {
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
+            
+                 if (kryptonTextBox5.Text == "Enter the password againe.")
+                kryptonTextBox5.Text = "";
         }
 
         private void kryptonTextBox6_Enter(object sender, EventArgs e)
         {
             label5.ForeColor = Color.Black;
+            if (kryptonTextBox6.Text == "DD")
+                kryptonTextBox6.Text = "";
         }
 
         private void kryptonTextBox7_Enter(object sender, EventArgs e)
         {
             label5.ForeColor = Color.Black;
+            if (kryptonTextBox7.Text == "YYYY")
+                kryptonTextBox7.Text = "";
         }
 
         private void kryptonTextBox8_Enter(object sender, EventArgs e)

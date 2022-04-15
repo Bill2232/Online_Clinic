@@ -113,10 +113,12 @@
             // 
             // kryptonTextBox7
             // 
+            this.kryptonTextBox7.AlwaysActive = false;
             this.kryptonTextBox7.Location = new System.Drawing.Point(960, 773);
             this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox7.Name = "kryptonTextBox7";
             this.kryptonTextBox7.Size = new System.Drawing.Size(224, 59);
+            this.kryptonTextBox7.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -136,10 +138,12 @@
             // 
             // kryptonTextBox6
             // 
+            this.kryptonTextBox6.AlwaysActive = false;
             this.kryptonTextBox6.Location = new System.Drawing.Point(426, 773);
             this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox6.Name = "kryptonTextBox6";
             this.kryptonTextBox6.Size = new System.Drawing.Size(142, 59);
+            this.kryptonTextBox6.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox6.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox6.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox6.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -182,10 +186,12 @@
             // 
             // kryptonTextBox5
             // 
+            this.kryptonTextBox5.AlwaysActive = false;
             this.kryptonTextBox5.Location = new System.Drawing.Point(426, 619);
             this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.Size = new System.Drawing.Size(758, 59);
+            this.kryptonTextBox5.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox5.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -209,7 +215,7 @@
             this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
             this.kryptonTextBox4.Size = new System.Drawing.Size(758, 59);
-            this.kryptonTextBox4.StateActive.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBox4.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -256,6 +262,7 @@
             this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.Size = new System.Drawing.Size(328, 59);
+            this.kryptonTextBox3.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -274,10 +281,12 @@
             // 
             // kryptonTextBox2
             // 
+            this.kryptonTextBox2.AlwaysActive = false;
             this.kryptonTextBox2.Location = new System.Drawing.Point(426, 312);
             this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.Size = new System.Drawing.Size(758, 59);
+            this.kryptonTextBox2.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -301,6 +310,7 @@
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(328, 59);
+            this.kryptonTextBox1.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -331,6 +341,7 @@
             // 
             // kryptonComboBox2
             // 
+            this.kryptonComboBox2.AlwaysActive = false;
             this.kryptonComboBox2.DropDownWidth = 136;
             this.kryptonComboBox2.Items.AddRange(new object[] {
             "January",
@@ -349,6 +360,7 @@
             this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(280, 54);
+            this.kryptonComboBox2.StateActive.ComboBox.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -417,10 +429,12 @@
             // 
             // kryptonTextBox8
             // 
+            this.kryptonTextBox8.AlwaysActive = false;
             this.kryptonTextBox8.Location = new System.Drawing.Point(426, 1081);
             this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox8.Name = "kryptonTextBox8";
             this.kryptonTextBox8.Size = new System.Drawing.Size(758, 59);
+            this.kryptonTextBox8.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.kryptonTextBox8.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
