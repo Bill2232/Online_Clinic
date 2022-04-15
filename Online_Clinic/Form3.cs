@@ -298,11 +298,6 @@ namespace Online_Clinic
 
         }
 
-        private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
@@ -310,12 +305,17 @@ namespace Online_Clinic
 
         private void kryptonTextBox1_Enter(object sender, EventArgs e)
         {
+            if (kryptonTextBox1.Text == "First name")
+                kryptonTextBox1.Text = "";
             label2.ForeColor = Color.Black;
         }
 
         private void kryptonTextBox3_Enter(object sender, EventArgs e)
         {
             label2.ForeColor = Color.Black;
+            if (kryptonTextBox3.Text == "Last name")
+                kryptonTextBox3.Text = "";
+           
         }
 
         private void kryptonTextBox4_Enter(object sender, EventArgs e)
@@ -367,6 +367,13 @@ namespace Online_Clinic
             DateTime now = DateTime.Now;
             age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
             label6.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "First name")
+                kryptonTextBox1.Text = "";
+            label2.ForeColor = Color.Black;
         }
     }
     
