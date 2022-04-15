@@ -38,7 +38,7 @@ namespace Online_Clinic
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-         
+
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox2.Text + "'", con);
             DataTable mail = new DataTable();
             sda.Fill(mail);
@@ -65,7 +65,7 @@ namespace Online_Clinic
                 if (mail.Rows[0][0].ToString() == "0")
                 {
                     string doctorID = Guid.NewGuid().ToString("N");
-                    string name = kryptonTextBox1.Text.ToString() + "  "+kryptonTextBox3.Text.ToString();
+                    string name = kryptonTextBox1.Text.ToString() + "  " + kryptonTextBox3.Text.ToString();
                     string email = kryptonTextBox2.Text;
 
                     con.Open();
@@ -94,40 +94,42 @@ namespace Online_Clinic
                     f.Show();
                     this.Hide();
                 }
-               
+
             }
-            MessageBox.Show("u have to complete the fields");
-            if (password_macth != true || kryptonTextBox4.Text != "")
+            else
             {
-                label3.ForeColor = Color.Red;
+                if (password_macth != true || kryptonTextBox4.Text != "")
+                {
+                    label3.ForeColor = Color.Red;
+                }
+
+                if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY" || kryptonTextBox7.Text.Length != 4 || Convert.ToInt32(kryptonTextBox6.Text) > 32)
+                    label5.ForeColor = Color.Red;
+                if (age < 16)
+                    label5.ForeColor = Color.Red;
+
+                if (gander_Checked == false)
+                    label6.ForeColor = Color.Red;
+
+                if (kryptonTextBox8.Text == "" || kryptonTextBox8.Text == "Enter your phone number.")
+                    label7.ForeColor = Color.Red;
+
+                if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
+                {
+                    label3.ForeColor = Color.Red;
+                    label4.ForeColor = Color.Red;
+                }
+                else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+                {
+                    label12.Visible = true;
+                    label12.Text = "password macth";
+                    label12.ForeColor = Color.Green;
+                }
+                if (kryptonTextBox2.Text == "" || kryptonTextBox2.Text == "Enter your email.")
+                    label1.ForeColor = Color.Red;
+                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" || kryptonTextBox1.Text == "First name" || kryptonTextBox1.Text == "Last name")
+                    label2.ForeColor = Color.Red;
             }
-
-            if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY" || kryptonTextBox7.Text.Length != 4 || Convert.ToInt32(kryptonTextBox6.Text) > 32)
-                label5.ForeColor = Color.Red;
-            if (age < 16)
-                label5.ForeColor = Color.Red;
-
-            if (gander_Checked==false)
-                label6.ForeColor = Color.Red;
-
-            if (kryptonTextBox8.Text == "" || kryptonTextBox8.Text == "Enter your phone number.")
-                label7.ForeColor = Color.Red;
-
-            if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
-            {
-                label3.ForeColor = Color.Red;
-                label4.ForeColor = Color.Red;
-            }
-            else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
-            {
-                label12.Visible = true;
-                label12.Text = "password macth";
-                label12.ForeColor = Color.Green;
-            }
-            if(kryptonTextBox2.Text =="" || kryptonTextBox2.Text== "Enter your email.")
-                label1.ForeColor = Color.Red;
-            if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" || kryptonTextBox1.Text == "First name" || kryptonTextBox1.Text == "Last name")
-                label2.ForeColor = Color.Red;
         }
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
