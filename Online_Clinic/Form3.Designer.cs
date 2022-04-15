@@ -434,7 +434,7 @@ namespace Online_Clinic
             this.radioButton1.Location = new System.Drawing.Point(444, 927);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(107, 50);
+            this.radioButton1.Size = new System.Drawing.Size(113, 50);
             this.radioButton1.TabIndex = 35;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -448,7 +448,7 @@ namespace Online_Clinic
             this.radioButton2.Location = new System.Drawing.Point(626, 927);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(141, 50);
+            this.radioButton2.Size = new System.Drawing.Size(147, 50);
             this.radioButton2.TabIndex = 36;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -462,7 +462,7 @@ namespace Online_Clinic
             this.radioButton3.Location = new System.Drawing.Point(834, 927);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(248, 50);
+            this.radioButton3.Size = new System.Drawing.Size(254, 50);
             this.radioButton3.TabIndex = 37;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Prefer not to tell";
@@ -648,7 +648,7 @@ namespace Online_Clinic
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(1190, 465);
+            this.label11.Location = new System.Drawing.Point(1190, 466);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(426, 117);
@@ -656,13 +656,14 @@ namespace Online_Clinic
             this.label11.Text = "Your password must be at least \r\n8 characters including Capital letters,\r\n number" +
     "s, and some samples!";
             this.label11.Visible = false;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins", 7.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(1196, 631);
+            this.label12.Location = new System.Drawing.Point(1196, 632);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(296, 37);
@@ -712,7 +713,7 @@ namespace Online_Clinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(2196, 1208);
+            this.ClientSize = new System.Drawing.Size(2264, 1208);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);

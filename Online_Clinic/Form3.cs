@@ -82,7 +82,7 @@ namespace Online_Clinic
                 if (mail.Rows[0][0].ToString() == "0")
                 {
                     string userID = Guid.NewGuid().ToString("N");
-                    string name = kryptonTextBox1.Text.ToString() + kryptonTextBox3.Text.ToString();
+                    string name = kryptonTextBox1.Text.ToString() + "  " + kryptonTextBox3.Text.ToString();
                     string email = kryptonTextBox2.Text;
                     con.Open();
                     //
@@ -505,6 +505,16 @@ namespace Online_Clinic
         private void kryptonComboBox2_Enter(object sender, EventArgs e)
         {
             label5.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
     
