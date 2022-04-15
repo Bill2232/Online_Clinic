@@ -135,6 +135,7 @@ namespace Online_Clinic
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pictureBox3.Visible = true;
+            pictureBox2.Visible= false;
             kryptonTextBox2.UseSystemPasswordChar = false;
         }
         
@@ -174,6 +175,12 @@ namespace Online_Clinic
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox3.Visible=false;
         }
     }
 }
