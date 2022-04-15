@@ -20,7 +20,7 @@ namespace Online_Clinic
         SqlCommand cmd;
 
         int age = 0;
-       
+        
         bool Valid_email = false;
         bool password_macth = false;
         bool gander_Checked = false;
@@ -32,7 +32,7 @@ namespace Online_Clinic
         public Form3()
         {
             InitializeComponent();
-      
+
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -97,9 +97,9 @@ namespace Online_Clinic
                     string email = kryptonTextBox2.Text;
                     con.Open();
                     //
-                    cmd = new SqlCommand("insert into patient ([userID],[name],email,password,birthday,gender,[mobile_numbur],verificationCode )values('" + userID + "','" + name + "','" + email + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox6.Text+ kryptonComboBox2.SelectedValue.ToString() + kryptonTextBox7.Text + "','" + gander + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
+                    cmd = new SqlCommand("insert into patient ([userID],[name],email,password,birthday,gender,[mobile_numbur],verificationCode )values('" + userID + "','" + name + "','" + email + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox6.Text + kryptonComboBox2.SelectedValue.ToString() + kryptonTextBox7.Text + "','" + gander + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
                     //
-                    
+
                     cmd.ExecuteNonQuery();
                     con.Close();
                     //
@@ -125,17 +125,16 @@ namespace Online_Clinic
             }
             else
             {
-                MessageBox.Show("you have Complete the fields");
-                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" )
+                MessageBox.Show("you have to Complete the fields");
+                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "")
                     label2.ForeColor = Color.Red;
 
                 if (kryptonTextBox2.Text == "")
                     label1.ForeColor = Color.Red;
 
-                if (textBox3.Text == "")
+                // if (textBox3.Text == "")
 
                 if (kryptonTextBox4.Text == "")
-
                     label3.ForeColor = Color.Red;
 
                 if (kryptonTextBox5.Text == "")
@@ -156,13 +155,13 @@ namespace Online_Clinic
                 if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "")
                 {
                     label12.Visible = true;
-                    
+
                 }
                 else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
                 {
-                
-                   label12.Visible = false;
-                    kryptonTextBox4.ForeColor= Color.Green;
+
+                    label12.Visible = false;
+                    kryptonTextBox4.ForeColor = Color.Green;
                     kryptonTextBox5.BackColor = Color.Green;
                 }
 
@@ -179,7 +178,7 @@ namespace Online_Clinic
 
         private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
         {
-            label1.ForeColor = Color.Black;
+            // label1.ForeColor = Color.Black;
         }
 
         private void kryptonTextBox7_TextChanged(object sender, EventArgs e)
@@ -195,7 +194,7 @@ namespace Online_Clinic
 
         private void kryptonTextBox6_TextChanged(object sender, EventArgs e)
         {
-            label5.ForeColor = Color.Black;
+            //  label5.ForeColor = Color.Black;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -263,7 +262,7 @@ namespace Online_Clinic
             if (kryptonTextBox2.Text.Contains('@') && kryptonTextBox2.Text.Contains("."))
             {
 
-              
+
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
                     label10.Visible = false;
@@ -279,7 +278,7 @@ namespace Online_Clinic
             }
             else
             {
-               
+
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
                     label10.Visible = false;
@@ -298,5 +297,77 @@ namespace Online_Clinic
         {
 
         }
+
+        private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_Enter(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        {
+            label2.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox3_Enter(object sender, EventArgs e)
+        {
+            label2.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox4_Enter(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Black;
+            label4.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox5_Enter(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Black;
+            label4.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox6_Enter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox7_Enter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox8_Enter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Black;
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+        }
+
+
+        private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+        }
+
+
+        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+        }
+
+        private void kryptonTextBox7_Leave(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            age = DateTime.Year - kryptonTextBox7.Text;
+            label6.ForeColor = Color.Black;
+        }
     }
+    
 }

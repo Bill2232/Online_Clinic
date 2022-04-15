@@ -130,6 +130,8 @@
             this.kryptonTextBox7.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox7.TabIndex = 30;
             this.kryptonTextBox7.Text = "YYYY";
+            this.kryptonTextBox7.Enter += new System.EventHandler(this.kryptonTextBox7_Enter);
+            this.kryptonTextBox7.Leave += new System.EventHandler(this.kryptonTextBox7_Leave);
             // 
             // kryptonTextBox6
             // 
@@ -150,6 +152,7 @@
             this.kryptonTextBox6.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox6.TabIndex = 29;
             this.kryptonTextBox6.Text = "DD";
+            this.kryptonTextBox6.Enter += new System.EventHandler(this.kryptonTextBox6_Enter);
             // 
             // label4
             // 
@@ -192,6 +195,7 @@
             this.kryptonTextBox5.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox5.TabIndex = 26;
             this.kryptonTextBox5.Text = "Enter the password againe.";
+            this.kryptonTextBox5.Enter += new System.EventHandler(this.kryptonTextBox5_Enter);
             // 
             // kryptonTextBox4
             // 
@@ -212,6 +216,7 @@
             this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox4.TabIndex = 25;
             this.kryptonTextBox4.Text = "Create a password.";
+            this.kryptonTextBox4.Enter += new System.EventHandler(this.kryptonTextBox4_Enter);
             // 
             // label1
             // 
@@ -254,6 +259,7 @@
             this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox3.TabIndex = 22;
             this.kryptonTextBox3.Text = "Last name";
+            this.kryptonTextBox3.Enter += new System.EventHandler(this.kryptonTextBox3_Enter);
             // 
             // kryptonTextBox2
             // 
@@ -274,6 +280,8 @@
             this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox2.TabIndex = 21;
             this.kryptonTextBox2.Text = "Enter your email.";
+            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged_1);
+            this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
             // 
             // kryptonTextBox1
             // 
@@ -294,6 +302,7 @@
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox1.TabIndex = 20;
             this.kryptonTextBox1.Text = "First name";
+            this.kryptonTextBox1.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
             // 
             // label5
             // 
@@ -359,6 +368,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // radioButton2
             // 
@@ -371,6 +381,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged_1);
             // 
             // radioButton3
             // 
@@ -383,6 +394,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Prefer not to tell";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
             // 
             // kryptonTextBox8
             // 
@@ -403,6 +415,7 @@
             this.kryptonTextBox8.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox8.TabIndex = 38;
             this.kryptonTextBox8.Text = "Enter your phone number.";
+            this.kryptonTextBox8.Enter += new System.EventHandler(this.kryptonTextBox8_Enter);
             // 
             // label7
             // 
@@ -579,7 +592,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(851, 507);
+            this.ClientSize = new System.Drawing.Size(851, 714);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -609,7 +622,6 @@
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonTextBox1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(850, 546);
             this.MinimumSize = new System.Drawing.Size(850, 546);
             this.Name = "Form3";
             this.Palette = this.kryptonPalette1;
