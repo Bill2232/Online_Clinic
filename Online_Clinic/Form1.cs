@@ -19,7 +19,7 @@ namespace Online_Clinic
     public partial class Form1 : KryptonForm
     {
         SqlConnection con = new SqlConnection(@"workstation id=AWDsqlonline.mssql.somee.com;packet size=4096;user id=mustafaalsharef_SQLLogin_1;pwd=7aczijc3l9;data source=AWDsqlonline.mssql.somee.com;persist security info=False;initial catalog=AWDsqlonline");
-
+        //999
         SqlCommand cmd;
 
         public static string email;
