@@ -75,7 +75,8 @@ namespace Online_Clinic
                 && kryptonTextBox4.Text.Length > 7
                 && kryptonComboBox2.Text != "Month"
                 && kryptonTextBox7.Text != "YYYY"
-                && kryptonTextBox7.Text.Length > 3)
+                && kryptonTextBox7.Text.Length > 3
+                && Convert.ToInt32(kryptonTextBox6.Text) > 32)
             {
 
                 if (mail.Rows[0][0].ToString() == "0")
@@ -127,7 +128,7 @@ namespace Online_Clinic
                 if (kryptonTextBox5.Text == "")
                     label4.ForeColor = Color.Red;
 
-                if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY"  || kryptonTextBox7.Text.Length != 4)
+                if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY"  || kryptonTextBox7.Text.Length != 4 || Convert.ToInt32(kryptonTextBox6.Text) > 32 )
                     label5.ForeColor = Color.Red;
 
                 if (age < 16)
@@ -481,6 +482,7 @@ namespace Online_Clinic
         private void kryptonTextBox6_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            
             //  e.Handled = char.IsDigit(e.KeyChar);
 
         }
