@@ -301,6 +301,9 @@ namespace Online_Clinic
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
+            if (kryptonTextBox2.Text == "Enter your email.")
+                kryptonTextBox2.Text = "";
+            
         }
 
         private void kryptonTextBox1_Enter(object sender, EventArgs e)

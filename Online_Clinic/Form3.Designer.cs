@@ -113,9 +113,10 @@
             // 
             // kryptonTextBox7
             // 
-            this.kryptonTextBox7.Location = new System.Drawing.Point(480, 402);
+            this.kryptonTextBox7.Location = new System.Drawing.Point(960, 773);
+            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(112, 32);
+            this.kryptonTextBox7.Size = new System.Drawing.Size(224, 59);
             this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -135,9 +136,10 @@
             // 
             // kryptonTextBox6
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(213, 402);
+            this.kryptonTextBox6.Location = new System.Drawing.Point(426, 773);
+            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(71, 32);
+            this.kryptonTextBox6.Size = new System.Drawing.Size(142, 59);
             this.kryptonTextBox6.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox6.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox6.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -159,9 +161,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(217, 294);
+            this.label4.Location = new System.Drawing.Point(434, 565);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 25);
+            this.label4.Size = new System.Drawing.Size(333, 48);
             this.label4.TabIndex = 28;
             this.label4.Text = "Confirm your password";
             // 
@@ -170,17 +173,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(217, 214);
+            this.label3.Location = new System.Drawing.Point(434, 412);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 25);
+            this.label3.Size = new System.Drawing.Size(276, 48);
             this.label3.TabIndex = 27;
             this.label3.Text = "Create a password";
             // 
             // kryptonTextBox5
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(213, 322);
+            this.kryptonTextBox5.Location = new System.Drawing.Point(426, 619);
+            this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(379, 32);
+            this.kryptonTextBox5.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox5.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -199,9 +204,12 @@
             // 
             // kryptonTextBox4
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(213, 242);
+            this.kryptonTextBox4.AlwaysActive = false;
+            this.kryptonTextBox4.Location = new System.Drawing.Point(426, 465);
+            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(379, 32);
+            this.kryptonTextBox4.Size = new System.Drawing.Size(758, 59);
+            this.kryptonTextBox4.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -223,9 +231,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(217, 134);
+            this.label1.Location = new System.Drawing.Point(434, 258);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 25);
+            this.label1.Size = new System.Drawing.Size(283, 48);
             this.label1.TabIndex = 24;
             this.label1.Text = "What is your email?";
             // 
@@ -234,17 +243,19 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(217, 54);
+            this.label2.Location = new System.Drawing.Point(434, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 25);
+            this.label2.Size = new System.Drawing.Size(210, 48);
             this.label2.TabIndex = 23;
             this.label2.Text = "What\'s name?";
             // 
             // kryptonTextBox3
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(428, 82);
+            this.kryptonTextBox3.Location = new System.Drawing.Point(856, 158);
+            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(164, 32);
+            this.kryptonTextBox3.Size = new System.Drawing.Size(328, 59);
             this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -263,9 +274,10 @@
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(213, 162);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(426, 312);
+            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(379, 32);
+            this.kryptonTextBox2.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -285,9 +297,10 @@
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(213, 82);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(426, 158);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(164, 32);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(328, 59);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -309,9 +322,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(217, 374);
+            this.label5.Location = new System.Drawing.Point(434, 719);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 25);
+            this.label5.Size = new System.Drawing.Size(361, 48);
             this.label5.TabIndex = 32;
             this.label5.Text = "What\'s your date of birth?";
             // 
@@ -331,9 +345,10 @@
             "October",
             "November",
             "December"});
-            this.kryptonComboBox2.Location = new System.Drawing.Point(313, 402);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(626, 773);
+            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(140, 32);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(280, 54);
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -350,9 +365,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(217, 454);
+            this.label6.Location = new System.Drawing.Point(434, 873);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 25);
+            this.label6.Size = new System.Drawing.Size(293, 48);
             this.label6.TabIndex = 34;
             this.label6.Text = "What\'s your gender?";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -361,9 +377,10 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(222, 482);
+            this.radioButton1.Location = new System.Drawing.Point(444, 927);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 27);
+            this.radioButton1.Size = new System.Drawing.Size(107, 50);
             this.radioButton1.TabIndex = 35;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -374,9 +391,10 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(313, 482);
+            this.radioButton2.Location = new System.Drawing.Point(626, 927);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 27);
+            this.radioButton2.Size = new System.Drawing.Size(141, 50);
             this.radioButton2.TabIndex = 36;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -387,9 +405,10 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(417, 482);
+            this.radioButton3.Location = new System.Drawing.Point(834, 927);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(128, 27);
+            this.radioButton3.Size = new System.Drawing.Size(248, 50);
             this.radioButton3.TabIndex = 37;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Prefer not to tell";
@@ -398,9 +417,10 @@
             // 
             // kryptonTextBox8
             // 
-            this.kryptonTextBox8.Location = new System.Drawing.Point(213, 562);
+            this.kryptonTextBox8.Location = new System.Drawing.Point(426, 1081);
+            this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonTextBox8.Name = "kryptonTextBox8";
-            this.kryptonTextBox8.Size = new System.Drawing.Size(379, 32);
+            this.kryptonTextBox8.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox8.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -422,9 +442,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(217, 534);
+            this.label7.Location = new System.Drawing.Point(434, 1027);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 25);
+            this.label7.Size = new System.Drawing.Size(382, 48);
             this.label7.TabIndex = 39;
             this.label7.Text = "What\'s your phone number";
             // 
@@ -433,9 +454,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(218, 615);
+            this.label8.Location = new System.Drawing.Point(436, 1183);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(415, 19);
+            this.label8.Size = new System.Drawing.Size(820, 39);
             this.label8.TabIndex = 41;
             this.label8.Text = "Our service is a customized service. By clicking \"Sign-Up\", you agree to the";
             // 
@@ -444,16 +466,18 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(145)))), ((int)(((byte)(225)))));
-            this.linkLabel1.Location = new System.Drawing.Point(309, 634);
+            this.linkLabel1.Location = new System.Drawing.Point(618, 1219);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(165, 19);
+            this.linkLabel1.Size = new System.Drawing.Size(328, 39);
             this.linkLabel1.TabIndex = 42;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "terms and conditions of Use.";
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(330, 670);
+            this.kryptonButton1.Location = new System.Drawing.Point(660, 1288);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -468,7 +492,7 @@
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.OverrideDefault.Border.Width = 1;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(119, 43);
+            this.kryptonButton1.Size = new System.Drawing.Size(238, 83);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -516,9 +540,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(300, 726);
+            this.label9.Location = new System.Drawing.Point(600, 1396);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 25);
+            this.label9.Size = new System.Drawing.Size(263, 48);
             this.label9.TabIndex = 44;
             this.label9.Text = "Have an account?";
             // 
@@ -527,9 +552,10 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(145)))), ((int)(((byte)(225)))));
-            this.linkLabel2.Location = new System.Drawing.Point(436, 726);
+            this.linkLabel2.Location = new System.Drawing.Point(872, 1396);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(50, 23);
+            this.linkLabel2.Size = new System.Drawing.Size(101, 46);
             this.linkLabel2.TabIndex = 45;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Log in.";
@@ -540,9 +566,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 7.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(598, 167);
+            this.label10.Location = new System.Drawing.Point(1196, 321);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(154, 19);
+            this.label10.Size = new System.Drawing.Size(293, 37);
             this.label10.TabIndex = 72;
             this.label10.Text = "This email is already used!";
             this.label10.Visible = false;
@@ -552,9 +579,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(595, 242);
+            this.label11.Location = new System.Drawing.Point(1190, 465);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(215, 57);
+            this.label11.Size = new System.Drawing.Size(426, 117);
             this.label11.TabIndex = 73;
             this.label11.Text = "Your password must be at least \r\n8 characters including Capital letters,\r\n number" +
     "s, and some samples!";
@@ -565,9 +593,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins", 7.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(598, 328);
+            this.label12.Location = new System.Drawing.Point(1196, 631);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(154, 19);
+            this.label12.Size = new System.Drawing.Size(296, 37);
             this.label12.TabIndex = 74;
             this.label12.Text = "Password does not match!";
             this.label12.Visible = false;
@@ -577,25 +606,27 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(554, 244);
+            this.pictureBox2.Location = new System.Drawing.Point(1108, 469);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(70, 54);
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(885, 714);
+            this.ClientSize = new System.Drawing.Size(1838, 1373);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -624,8 +655,9 @@
             this.Controls.Add(this.kryptonTextBox3);
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(850, 546);
+            this.MinimumSize = new System.Drawing.Size(1674, 984);
             this.Name = "Form3";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
