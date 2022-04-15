@@ -132,7 +132,6 @@ namespace Online_Clinic
                 if (kryptonTextBox2.Text == "")
                     label1.ForeColor = Color.Red;
 
-                // if (textBox3.Text == "")
 
                 if (kryptonTextBox4.Text == "")
                     label3.ForeColor = Color.Red;
@@ -240,12 +239,18 @@ namespace Online_Clinic
 
         private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.Black;
-            label4.ForeColor = Color.Black;
+
             if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            {
                 password_macth = true;
+                
+            }
+
             else
+            {
                 password_macth = false;
+               
+            }
         }
 
         private void kryptonTextBox2_Leave(object sender, EventArgs e)
@@ -449,6 +454,18 @@ namespace Online_Clinic
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
             }
+            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            {
+                password_macth = true;
+                label12.Visible = false;
+
+            }
+            else
+            {
+                password_macth = false;
+                label12.Visible = true;
+
+            }
         }
 
         private void kryptonTextBox4_Leave(object sender, EventArgs e)
@@ -458,6 +475,18 @@ namespace Online_Clinic
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
             }
+            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+            {
+                password_macth = true;
+                label12.Visible = false;
+            }
+            else
+            {
+                password_macth = false;
+                label12.Visible = true;
+
+            }
+
         }
     }
     
