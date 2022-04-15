@@ -102,5 +102,10 @@ namespace Online_Clinic
         {
 
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

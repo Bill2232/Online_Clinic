@@ -197,5 +197,11 @@ namespace Online_Clinic
                 pictureBox3.Visible = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form7 a = new Form7();
+            a.Show();
+        }
     }
 }

@@ -63,6 +63,26 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add__1_ {
+            get {
+                object obj = ResourceManager.GetObject("add (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add__2_ {
+            get {
+                object obj = ResourceManager.GetObject("add (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bell {
             get {
                 object obj = ResourceManager.GetObject("bell", resourceCulture);
@@ -76,6 +96,16 @@ namespace Online_Clinic.Properties {
         internal static System.Drawing.Bitmap bell__1_ {
             get {
                 object obj = ResourceManager.GetObject("bell (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bell__2_ {
+            get {
+                object obj = ResourceManager.GetObject("bell (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +346,26 @@ namespace Online_Clinic.Properties {
         internal static System.Drawing.Bitmap heartbeat {
             get {
                 object obj = ResourceManager.GetObject("heartbeat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnifier {
+            get {
+                object obj = ResourceManager.GetObject("magnifier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnifier__1_ {
+            get {
+                object obj = ResourceManager.GetObject("magnifier (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -302,6 +302,7 @@
             this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox3.TabIndex = 22;
             this.kryptonTextBox3.Text = "Last name";
+            this.kryptonTextBox3.TextChanged += new System.EventHandler(this.kryptonTextBox3_TextChanged);
             this.kryptonTextBox3.Enter += new System.EventHandler(this.kryptonTextBox3_Enter);
             // 
             // kryptonTextBox2
@@ -329,6 +330,7 @@
             this.kryptonTextBox2.Text = "Enter your email.";
             this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged_1);
             this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.kryptonTextBox2_Leave);
             // 
             // kryptonTextBox1
             // 
@@ -352,6 +354,7 @@
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox1.TabIndex = 20;
             this.kryptonTextBox1.Text = "First name";
+            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             this.kryptonTextBox1.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
             // 
             // label5
@@ -425,7 +428,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -439,7 +442,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged_1);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -453,7 +456,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Prefer not to tell";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // kryptonTextBox8
             // 

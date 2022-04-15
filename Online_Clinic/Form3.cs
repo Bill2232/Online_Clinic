@@ -222,6 +222,9 @@ namespace Online_Clinic
         private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
         {
             label2.ForeColor = Color.Black;
+            if (kryptonTextBox1.Text == "First name")
+                kryptonTextBox1.Text = "";
+            label2.ForeColor = Color.Black;
         }
 
         private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
@@ -394,23 +397,6 @@ namespace Online_Clinic
             
         }
 
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
-        {
-            label6.ForeColor = Color.Black;
-        }
-
-
-        private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
-        {
-            label6.ForeColor = Color.Black;
-        }
-
-
-        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
-        {
-            label6.ForeColor = Color.Black;
-        }
-
         private void kryptonTextBox7_Leave(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
@@ -421,12 +407,7 @@ namespace Online_Clinic
         {
 
         }
-        private void kryptonTextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-            if (kryptonTextBox1.Text == "First name")
-                kryptonTextBox1.Text = "";
-            label2.ForeColor = Color.Black;
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
