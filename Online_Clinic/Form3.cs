@@ -337,7 +337,7 @@ namespace Online_Clinic
             {
                 kryptonTextBox4.Text = "";
                 kryptonTextBox4.AlwaysActive = true;
-
+                kryptonTextBox4.UseSystemPasswordChar = true;
             }
 
         }
@@ -348,10 +348,12 @@ namespace Online_Clinic
             label4.ForeColor = Color.Black;
             
                  if (kryptonTextBox5.Text == "Enter the password againe.")
-            {
-                kryptonTextBox5.AlwaysActive = true;
-                kryptonTextBox5.Text = "";
-            }
+                 {
+                      kryptonTextBox5.AlwaysActive = true;
+                      kryptonTextBox5.Text = "";
+               
+                      kryptonTextBox5.UseSystemPasswordChar = true;
+                 }
            
         }
 
@@ -420,6 +422,14 @@ namespace Online_Clinic
             if (kryptonTextBox1.Text == "First name")
                 kryptonTextBox1.Text = "";
             label2.ForeColor = Color.Black;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            kryptonTextBox4.UseSystemPasswordChar = true;
+            kryptonTextBox5.UseSystemPasswordChar = true;
+            pictureBox2.Visible = true;
+            pictureBox1.Visible = false;
         }
     }
     
