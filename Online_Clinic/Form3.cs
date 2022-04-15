@@ -355,6 +355,9 @@ namespace Online_Clinic
         private void kryptonTextBox8_Enter(object sender, EventArgs e)
         {
             label7.ForeColor = Color.Black;
+            if (kryptonTextBox8.Text == "Enter your phone number.")
+                kryptonTextBox8.Text = "";
+            
         }
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
