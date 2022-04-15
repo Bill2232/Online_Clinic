@@ -134,7 +134,7 @@ namespace Online_Clinic
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            pictureBox3.Visible = true;
             kryptonTextBox2.UseSystemPasswordChar = false;
         }
         
