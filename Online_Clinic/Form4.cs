@@ -38,8 +38,7 @@ namespace Online_Clinic
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            //Form5 a = new Form5();
-            // a.Show();
+         
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox2.Text + "'", con);
             DataTable mail = new DataTable();
             sda.Fill(mail);
@@ -60,7 +59,7 @@ namespace Online_Clinic
                 && kryptonComboBox2.Text != "Month"
                 && kryptonTextBox7.Text != "YYYY"
                 && kryptonTextBox7.Text.Length > 3
-                && Convert.ToInt32(kryptonTextBox6.Text) > 32
+                && Convert.ToInt32(kryptonTextBox6.Text) < 32
                 && kryptonTextBox8.Text.Length == 11)
             {
                 if (mail.Rows[0][0].ToString() == "0")
@@ -97,7 +96,7 @@ namespace Online_Clinic
                 }
                
             }
-            
+            MessageBox.Show("u have to complete the fields");
             if (password_macth != true || kryptonTextBox4.Text != "")
             {
                 label3.ForeColor = Color.Red;
@@ -124,7 +123,6 @@ namespace Online_Clinic
                 label12.Visible = true;
                 label12.Text = "password macth";
                 label12.ForeColor = Color.Green;
-
             }
             if(kryptonTextBox2.Text =="" || kryptonTextBox2.Text== "Enter your email.")
                 label1.ForeColor = Color.Red;
