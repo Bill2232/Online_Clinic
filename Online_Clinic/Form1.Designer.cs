@@ -291,6 +291,7 @@
             this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox2.TabIndex = 8;
             this.kryptonTextBox2.Text = "Enter the password";
+            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
             this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
             // 
             // label3

@@ -181,6 +181,12 @@ namespace Online_Clinic
         {
             pictureBox2.Visible = true;
             pictureBox3.Visible=false;
+            kryptonTextBox2.UseSystemPasswordChar = true;
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
