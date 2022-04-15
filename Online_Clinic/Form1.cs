@@ -158,6 +158,7 @@ namespace Online_Clinic
         {
             if (kryptonTextBox1.Text == "Enter your email address")
                 kryptonTextBox1.Text = "";
+            kryptonTextBox1.AlwaysActive = true;
         }
 
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
@@ -166,6 +167,7 @@ namespace Online_Clinic
             {
                 kryptonTextBox2.Text = "";
                 kryptonTextBox2.UseSystemPasswordChar = true;
+                kryptonTextBox2.AlwaysActive = true;
             }
         }
 
@@ -183,8 +185,17 @@ namespace Online_Clinic
 
         private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
         {
-            if(kryptonTextBox2.UseSystemPasswordChar == true)
+            if(kryptonTextBox2.UseSystemPasswordChar == true )
                 pictureBox2.Visible = true;
+        }
+
+        private void kryptonTextBox2_Leave(object sender, EventArgs e)
+        {
+            if(kryptonTextBox2.Text == "")
+            {
+                pictureBox2.Visible = false;
+                pictureBox3.Visible = false;
+            }
         }
     }
 }

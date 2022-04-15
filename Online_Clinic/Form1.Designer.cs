@@ -297,6 +297,7 @@
             this.kryptonTextBox2.Text = "Enter the password";
             this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
             this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.kryptonTextBox2_Leave);
             // 
             // label3
             // 
