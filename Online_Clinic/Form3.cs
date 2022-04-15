@@ -32,7 +32,6 @@ namespace Online_Clinic
         public Form3()
         {
             InitializeComponent();
-
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -49,21 +48,6 @@ namespace Online_Clinic
         {
             Form1 a = new Form1();
             a.Show();
-
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void vScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
-        {
 
         }
 
@@ -87,7 +71,11 @@ namespace Online_Clinic
                 && password_macth == true
                 && Valid_email == true
                 && gander_Checked == true
-                && Email_available_check == true)
+                && Email_available_check == true
+                && kryptonTextBox4.Text.Length > 7
+                && kryptonComboBox2.Text != "Month"
+                && kryptonTextBox7.Text != "YYYY"
+                && kryptonTextBox7.Text.Length > 3)
             {
 
                 if (mail.Rows[0][0].ToString() == "0")
@@ -97,7 +85,7 @@ namespace Online_Clinic
                     string email = kryptonTextBox2.Text;
                     con.Open();
                     //
-                    cmd = new SqlCommand("insert into patient ([userID],[name],email,password,birthday,gender,[mobile_numbur],verificationCode )values('" + userID + "','" + name + "','" + email + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox6.Text + kryptonComboBox2.SelectedValue.ToString() + kryptonTextBox7.Text + "','" + gander + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
+                    cmd = new SqlCommand("insert into patient ([userID],[name],email,password,birthday,gender,[mobile_numbur],verificationCode )values('" + userID + "','" + name + "','" + email + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox6.Text +"/"+ kryptonComboBox2.Text +"/"+ kryptonTextBox7.Text + "','" + gander + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
                     //
 
                     cmd.ExecuteNonQuery();
@@ -125,11 +113,11 @@ namespace Online_Clinic
             }
             else
             {
-                MessageBox.Show("you have to Complete the fields");
-                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "")
+              //  MessageBox.Show("you have to Complete the fields");
+                if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" || kryptonTextBox1.Text == "First name" || kryptonTextBox1.Text == "Last name")
                     label2.ForeColor = Color.Red;
 
-                if (kryptonTextBox2.Text == "")
+                if (kryptonTextBox2.Text == ""|| Valid_email==false || Email_available_check ==false)
                     label1.ForeColor = Color.Red;
 
 
@@ -139,7 +127,7 @@ namespace Online_Clinic
                 if (kryptonTextBox5.Text == "")
                     label4.ForeColor = Color.Red;
 
-                if (kryptonTextBox6.Text == "" || kryptonTextBox7.Text == "")
+                if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY"  || kryptonTextBox7.Text.Length != 4)
                     label5.ForeColor = Color.Red;
 
                 if (age < 16)
@@ -148,20 +136,20 @@ namespace Online_Clinic
                 if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
                     label6.ForeColor = Color.Red;
 
-                if (kryptonTextBox8.Text == "")
+                if (kryptonTextBox8.Text == ""|| kryptonTextBox8.Text == "Enter your phone number.")
                     label7.ForeColor = Color.Red;
 
-                if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "")
+                if (kryptonTextBox4.Text != kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
                 {
-                    label12.Visible = true;
-
+                    label3.ForeColor=Color.Red;
+                    label4.ForeColor = Color.Red;
                 }
                 else if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "")
                 {
-
-                    label12.Visible = false;
-                    kryptonTextBox4.ForeColor = Color.Green;
-                    kryptonTextBox5.BackColor = Color.Green;
+                    label12.Visible = true;
+                    label12.Text = "password macth";
+                    label12.ForeColor = Color.Green;
+                   
                 }
 
 
@@ -234,7 +222,11 @@ namespace Online_Clinic
 
         private void kryptonTextBox4_TextChanged(object sender, EventArgs e)
         {
-
+            int password_length = kryptonTextBox4.Text.Length;
+           if(password_length < 8    )
+                label11.Visible = true;
+           else
+                label11.Visible = false;
         }
 
         private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
@@ -270,12 +262,16 @@ namespace Online_Clinic
 
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
-                    label10.Visible = false;
+                    label10.Visible = true;
+                    label10.Text = "email available";
+                    label10.ForeColor = Color.Green;
                     Email_available_check = true;
                 }
 
                 else
                 {
+                    label10.Text = "This email is already used!";
+                    label10.ForeColor = Color.Red;
                     label10.Visible = true;
                     Email_available_check = false;
                 }
@@ -286,15 +282,18 @@ namespace Online_Clinic
 
                 if (mail.Rows[0][0].ToString() == "0" && doctor_mail.Rows[0][0].ToString() == "0")
                 {
-                    label10.Visible = false;
+                    label10.Visible = true;
+                  
                     Email_available_check = true;
                 }
                 else
                 {
                     label10.Visible = true;
+                
                     Email_available_check = false;
                 }
                 Valid_email = false;
+                label10.Text = "unvalid email";
             }
         }
 
@@ -400,6 +399,7 @@ namespace Online_Clinic
         private void kryptonTextBox7_Leave(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
+            if(kryptonTextBox7.Text !="")
             age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
             label6.ForeColor = Color.Black;
         }
@@ -435,14 +435,17 @@ namespace Online_Clinic
             if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "" && kryptonTextBox5.Text != "")
             {
                 password_macth = true;
-                label12.Visible = false;
+                label12.Visible = true;
+                label12.ForeColor = Color.Green;
+                label12.Text = "password match";
 
             }
             else
             {
                 password_macth = false;
                 label12.Visible = true;
-
+                label12.ForeColor=Color.Red;
+                label12.Text = "Password does not match!";
             }
         }
 
@@ -453,18 +456,53 @@ namespace Online_Clinic
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
             }
-            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox4.Text != "" )
+            if (kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox5.Text != "" )
             {
                 password_macth = true;
-                label12.Visible = false;
+                label12.Visible = true;
+                label12.Text = "password match";
+                label12.ForeColor = Color.Green;
             }
-            else
+            else if(kryptonTextBox4.Text == kryptonTextBox5.Text && kryptonTextBox5.Text == "")
             {
                 password_macth = false;
-                label12.Visible = true;
+                label12.Visible = false;
+                
 
             }
 
+        }
+
+        private void kryptonTextBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void kryptonTextBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            //  e.Handled = char.IsDigit(e.KeyChar);
+
+        }
+
+        private void kryptonTextBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void kryptonComboBox2_Enter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Black;
         }
     }
     

@@ -131,7 +131,8 @@ namespace Online_Clinic
             // 
             this.kryptonTextBox7.AlwaysActive = false;
             this.kryptonTextBox7.Location = new System.Drawing.Point(960, 773);
-            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(6);
+            this.kryptonTextBox7.MaxLength = 4;
             this.kryptonTextBox7.Name = "kryptonTextBox7";
             this.kryptonTextBox7.Size = new System.Drawing.Size(224, 59);
             this.kryptonTextBox7.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -150,15 +151,17 @@ namespace Online_Clinic
             this.kryptonTextBox7.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox7.TabIndex = 30;
             this.kryptonTextBox7.Text = "YYYY";
-            this.kryptonTextBox7.TextChanged += new System.EventHandler(this.kryptonTextBox7_TextChanged_1);
+            this.kryptonTextBox7.TextChanged += new System.EventHandler(this.kryptonTextBox7_TextChanged);
             this.kryptonTextBox7.Enter += new System.EventHandler(this.kryptonTextBox7_Enter);
+            this.kryptonTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox7_KeyPress);
             this.kryptonTextBox7.Leave += new System.EventHandler(this.kryptonTextBox7_Leave);
             // 
             // kryptonTextBox6
             // 
             this.kryptonTextBox6.AlwaysActive = false;
             this.kryptonTextBox6.Location = new System.Drawing.Point(426, 773);
-            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(6);
+            this.kryptonTextBox6.MaxLength = 2;
             this.kryptonTextBox6.Name = "kryptonTextBox6";
             this.kryptonTextBox6.Size = new System.Drawing.Size(142, 59);
             this.kryptonTextBox6.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -179,6 +182,7 @@ namespace Online_Clinic
             this.kryptonTextBox6.Text = "DD";
             this.kryptonTextBox6.TextChanged += new System.EventHandler(this.kryptonTextBox6_TextChanged);
             this.kryptonTextBox6.Enter += new System.EventHandler(this.kryptonTextBox6_Enter);
+            this.kryptonTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox6_KeyPress);
             // 
             // label4
             // 
@@ -208,7 +212,8 @@ namespace Online_Clinic
             // 
             this.kryptonTextBox5.AlwaysActive = false;
             this.kryptonTextBox5.Location = new System.Drawing.Point(426, 619);
-            this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(6);
+            this.kryptonTextBox5.MaxLength = 60;
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox5.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -235,7 +240,8 @@ namespace Online_Clinic
             // 
             this.kryptonTextBox4.AlwaysActive = false;
             this.kryptonTextBox4.Location = new System.Drawing.Point(426, 465);
-            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(6);
+            this.kryptonTextBox4.MaxLength = 60;
             this.kryptonTextBox4.Name = "kryptonTextBox4";
             this.kryptonTextBox4.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox4.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -254,6 +260,7 @@ namespace Online_Clinic
             this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox4.TabIndex = 25;
             this.kryptonTextBox4.Text = "Create a password.";
+            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox4_TextChanged);
             this.kryptonTextBox4.Enter += new System.EventHandler(this.kryptonTextBox4_Enter);
             this.kryptonTextBox4.Leave += new System.EventHandler(this.kryptonTextBox4_Leave);
             // 
@@ -283,8 +290,9 @@ namespace Online_Clinic
             // 
             // kryptonTextBox3
             // 
+            this.kryptonTextBox3.AlwaysActive = false;
             this.kryptonTextBox3.Location = new System.Drawing.Point(856, 158);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(6);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.Size = new System.Drawing.Size(328, 59);
             this.kryptonTextBox3.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -310,7 +318,7 @@ namespace Online_Clinic
             // 
             this.kryptonTextBox2.AlwaysActive = false;
             this.kryptonTextBox2.Location = new System.Drawing.Point(426, 312);
-            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(6);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox2.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -336,7 +344,7 @@ namespace Online_Clinic
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.Location = new System.Drawing.Point(426, 158);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(328, 59);
             this.kryptonTextBox1.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -388,7 +396,7 @@ namespace Online_Clinic
             "November",
             "December"});
             this.kryptonComboBox2.Location = new System.Drawing.Point(626, 773);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(6);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(280, 54);
             this.kryptonComboBox2.StateActive.ComboBox.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -403,6 +411,8 @@ namespace Online_Clinic
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBox2.TabIndex = 33;
             this.kryptonComboBox2.Text = "Month";
+            this.kryptonComboBox2.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox2_SelectedIndexChanged);
+            this.kryptonComboBox2.Enter += new System.EventHandler(this.kryptonComboBox2_Enter);
             // 
             // label6
             // 
@@ -422,7 +432,7 @@ namespace Online_Clinic
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(444, 927);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(107, 50);
             this.radioButton1.TabIndex = 35;
@@ -436,7 +446,7 @@ namespace Online_Clinic
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(626, 927);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(141, 50);
             this.radioButton2.TabIndex = 36;
@@ -450,7 +460,7 @@ namespace Online_Clinic
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(834, 927);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(248, 50);
             this.radioButton3.TabIndex = 37;
@@ -463,7 +473,8 @@ namespace Online_Clinic
             // 
             this.kryptonTextBox8.AlwaysActive = false;
             this.kryptonTextBox8.Location = new System.Drawing.Point(426, 1081);
-            this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(6);
+            this.kryptonTextBox8.MaxLength = 11;
             this.kryptonTextBox8.Name = "kryptonTextBox8";
             this.kryptonTextBox8.Size = new System.Drawing.Size(758, 59);
             this.kryptonTextBox8.StateActive.Content.Color1 = System.Drawing.SystemColors.ControlText;
@@ -483,6 +494,7 @@ namespace Online_Clinic
             this.kryptonTextBox8.TabIndex = 38;
             this.kryptonTextBox8.Text = "Enter your phone number.";
             this.kryptonTextBox8.Enter += new System.EventHandler(this.kryptonTextBox8_Enter);
+            this.kryptonTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox8_KeyPress);
             // 
             // label7
             // 
@@ -524,7 +536,7 @@ namespace Online_Clinic
             // kryptonButton1
             // 
             this.kryptonButton1.Location = new System.Drawing.Point(660, 1288);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(6);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -664,14 +676,15 @@ namespace Online_Clinic
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.pictureBox1.BackgroundImage = global::Online_Clinic.Properties.Resources.view;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1108, 623);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(1108, 624);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 54);
             this.pictureBox1.TabIndex = 75;
@@ -684,8 +697,8 @@ namespace Online_Clinic
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(1108, 623);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(1108, 624);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 54);
             this.pictureBox2.TabIndex = 46;
@@ -699,7 +712,7 @@ namespace Online_Clinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(2060, 1208);
+            this.ClientSize = new System.Drawing.Size(2128, 1208);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
@@ -729,7 +742,7 @@ namespace Online_Clinic
             this.Controls.Add(this.kryptonTextBox3);
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonTextBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1664, 954);
             this.Name = "Form3";
