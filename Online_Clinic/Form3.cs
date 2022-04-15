@@ -353,8 +353,10 @@ namespace Online_Clinic
                       kryptonTextBox5.Text = "";
                
                       kryptonTextBox5.UseSystemPasswordChar = true;
+                pictureBox2.Visible=true;
                  }
-           
+            if (pictureBox1.Visible == false && pictureBox2.Visible == false)
+                pictureBox2.Visible = true;
         }
 
         private void kryptonTextBox6_Enter(object sender, EventArgs e)
@@ -430,6 +432,32 @@ namespace Online_Clinic
             kryptonTextBox5.UseSystemPasswordChar = true;
             pictureBox2.Visible = true;
             pictureBox1.Visible = false;
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            kryptonTextBox4.UseSystemPasswordChar = false;
+            kryptonTextBox5.UseSystemPasswordChar = false;
+            pictureBox2.Visible = false;
+            pictureBox1.Visible = true;
+        }
+
+        private void kryptonTextBox5_Leave(object sender, EventArgs e)
+        {
+            if (kryptonTextBox5.Text == ""&& kryptonTextBox4.Text =="")
+            {
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = false;
+            }
+        }
+
+        private void kryptonTextBox4_Leave(object sender, EventArgs e)
+        {
+            if (kryptonTextBox5.Text == "" && kryptonTextBox4.Text == "")
+            {
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = false;
+            }
         }
     }
     

@@ -226,6 +226,7 @@
             this.kryptonTextBox5.TabIndex = 26;
             this.kryptonTextBox5.Text = "Enter the password againe.";
             this.kryptonTextBox5.Enter += new System.EventHandler(this.kryptonTextBox5_Enter);
+            this.kryptonTextBox5.Leave += new System.EventHandler(this.kryptonTextBox5_Leave);
             // 
             // kryptonTextBox4
             // 
@@ -251,6 +252,7 @@
             this.kryptonTextBox4.TabIndex = 25;
             this.kryptonTextBox4.Text = "Create a password.";
             this.kryptonTextBox4.Enter += new System.EventHandler(this.kryptonTextBox4_Enter);
+            this.kryptonTextBox4.Leave += new System.EventHandler(this.kryptonTextBox4_Leave);
             // 
             // label1
             // 
@@ -662,7 +664,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.pictureBox1.BackgroundImage = global::Online_Clinic.Properties.Resources.view;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1108, 469);
+            this.pictureBox1.Location = new System.Drawing.Point(1108, 624);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 54);
@@ -676,12 +678,14 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(1108, 470);
+            this.pictureBox2.Location = new System.Drawing.Point(1108, 624);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 54);
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // Form3
             // 
