@@ -84,13 +84,8 @@ namespace Online_Clinic
                         Credentials = new NetworkCredential("support@awd.somee.com", "Jasba@ya%dee#")
                     };
                     client.Send("support@awd.somee.com", email, "Welcome to Online Clinic", "HI " + name + "\nThank you for using AWD");
-                    //
 
-                    //
-
-
-                    MessageBox.Show("great! ,now lets sighn in");
-                    Form1 f = new Form1();
+                    Form5 f = new Form5();
                     f.Show();
                     this.Hide();
                 }
