@@ -115,6 +115,7 @@
             this.kryptonButton10 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.guna2ShadowForm2 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1042,6 +1043,7 @@
             this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.pictureBox15);
+            this.panel4.Controls.Add(this.textBox1);
             this.panel4.Location = new System.Drawing.Point(422, 6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(395, 332);
@@ -1115,6 +1117,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.SystemColors.Window;
             this.label22.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(20, 96);
             this.label22.Name = "label22";
@@ -2052,6 +2055,14 @@
             this.kryptonButton10.TabIndex = 1;
             this.kryptonButton10.Values.Text = "Approve";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(3, 86);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(262, 193);
+            this.textBox1.TabIndex = 3;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2196,5 +2207,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton7;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
