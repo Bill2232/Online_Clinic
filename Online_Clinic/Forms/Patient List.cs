@@ -13,6 +13,7 @@ namespace Online_Clinic.Forms
 {
     public partial class Patient_List : Form
     {
+        public static string Pemail;
         public string email = Form1.email;
         SqlConnection con = new SqlConnection(@"workstation id=AWDsqlonline.mssql.somee.com;packet size=4096;user id=mustafaalsharef_SQLLogin_1;pwd=7aczijc3l9;data source=AWDsqlonline.mssql.somee.com;persist security info=False;initial catalog=AWDsqlonline");
         SqlCommand cmd;
@@ -25,8 +26,12 @@ namespace Online_Clinic.Forms
              "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "'  ) t where num_row =1" + //get info
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'accepted') t  where num_row = 1" + // next booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1" + // last booking
-             "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1"  // first booking
-               //end of sql first panel
+             "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1" + // first booking
+              //end of sql first panel
+             "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "'  ) t where num_row =2" + //get info
+             "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'accepted') t  where num_row = 1" + // next booking
+             "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'done') t  where num_row = 1" + // last booking
+             "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'done') t  where num_row = 1"  // first booking
               , con);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -67,6 +72,35 @@ namespace Online_Clinic.Forms
                 label12.Text = reader.GetValue(1).ToString();
             }
             // end of first panel
+            //panel 2
+            reader.NextResult();
+            if (reader.Read())
+            {
+                guna2ShadowPanel3.Visible = true;
+                label17.Text = reader.GetValue(0).ToString();
+                label18.Text = reader.GetValue(1).ToString();
+                label16.Text = reader.GetValue(2).ToString();
+            }
+            else
+            {
+                guna2ShadowPanel4.Visible = false;
+            }
+            reader.NextResult();
+            if (reader.Read())
+            {
+                label15.Text = reader.GetValue(1).ToString();
+            }
+            reader.NextResult();
+            while (reader.Read())
+            {
+                label14.Text = reader.GetValue(1).ToString();
+            }
+            reader.NextResult();
+            while (reader.Read())
+            {
+                label13.Text = reader.GetValue(1).ToString();
+            }
+            //end of panel2
 
             con.Close();
 
@@ -113,6 +147,7 @@ namespace Online_Clinic.Forms
 
         private void guna2ShadowPanel3_Click(object sender, EventArgs e)
         {
+            Pemail = label7.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 

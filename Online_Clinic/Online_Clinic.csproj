@@ -112,6 +112,18 @@
     <Compile Include="Forms\Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\coming treats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\coming treats.Designer.cs">
+      <DependentUpon>coming treats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\last treats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\last treats.Designer.cs">
+      <DependentUpon>last treats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Mwssages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\coming treats.resx">
+      <DependentUpon>coming treats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\last treats.resx">
+      <DependentUpon>last treats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mwssages.resx">
       <DependentUpon>Mwssages.cs</DependentUpon>

@@ -249,6 +249,7 @@
             this.guna2ShadowPanel8.ShadowShift = 0;
             this.guna2ShadowPanel8.Size = new System.Drawing.Size(1090, 66);
             this.guna2ShadowPanel8.TabIndex = 52;
+            this.guna2ShadowPanel8.Visible = false;
             // 
             // kryptonButton6
             // 
@@ -381,6 +382,7 @@
             this.guna2ShadowPanel7.ShadowShift = 0;
             this.guna2ShadowPanel7.Size = new System.Drawing.Size(1090, 66);
             this.guna2ShadowPanel7.TabIndex = 51;
+            this.guna2ShadowPanel7.Visible = false;
             // 
             // kryptonButton5
             // 
@@ -513,6 +515,7 @@
             this.guna2ShadowPanel6.ShadowShift = 0;
             this.guna2ShadowPanel6.Size = new System.Drawing.Size(1090, 66);
             this.guna2ShadowPanel6.TabIndex = 50;
+            this.guna2ShadowPanel6.Visible = false;
             // 
             // kryptonButton4
             // 
@@ -645,6 +648,7 @@
             this.guna2ShadowPanel5.ShadowShift = 0;
             this.guna2ShadowPanel5.Size = new System.Drawing.Size(1090, 66);
             this.guna2ShadowPanel5.TabIndex = 49;
+            this.guna2ShadowPanel5.Visible = false;
             // 
             // kryptonButton3
             // 
