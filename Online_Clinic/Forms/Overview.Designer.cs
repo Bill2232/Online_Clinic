@@ -115,6 +115,7 @@ namespace Online_Clinic.Forms
             this.label50 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -138,6 +139,7 @@ namespace Online_Clinic.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.guna2ShadowPanel16);
             this.panel1.Controls.Add(this.guna2ShadowPanel15);
@@ -1307,6 +1309,17 @@ namespace Online_Clinic.Forms
             this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(353, 25);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 19);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "label14";
+            this.label14.Visible = false;
+            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1443,5 +1456,6 @@ namespace Online_Clinic.Forms
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
