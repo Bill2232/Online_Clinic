@@ -638,6 +638,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
             this.pictureBox10.Image = global::Online_Clinic.Properties.Resources.magnifier__1_;
             this.pictureBox10.Location = new System.Drawing.Point(932, 29);
             this.pictureBox10.Name = "pictureBox10";

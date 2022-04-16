@@ -16,5 +16,25 @@ namespace Online_Clinic.Forms
         {
             InitializeComponent();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Patient_Details_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

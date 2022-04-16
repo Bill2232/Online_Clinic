@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label24 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -89,12 +90,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
             this.guna2ShadowPanel7.SuspendLayout();
@@ -102,12 +104,12 @@
             this.guna2ShadowPanel5.SuspendLayout();
             this.guna2ShadowPanel4.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // label24
@@ -204,6 +206,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.guna2ShadowPanel3);
             this.panel1.Controls.Add(this.guna2ShadowPanel2);
             this.panel1.Controls.Add(this.guna2ShadowPanel8);
             this.panel1.Controls.Add(this.guna2ShadowPanel1);
@@ -219,7 +222,6 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.guna2ShadowPanel3);
             this.panel1.Controls.Add(this.guna2ComboBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1022,6 +1024,7 @@
             this.label12.Size = new System.Drawing.Size(86, 23);
             this.label12.TabIndex = 48;
             this.label12.Text = "Mar 16, 17:30";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -1033,6 +1036,7 @@
             this.label11.Size = new System.Drawing.Size(86, 23);
             this.label11.TabIndex = 47;
             this.label11.Text = "Mar 16, 17:30";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label4
             // 
@@ -1044,6 +1048,7 @@
             this.label4.Size = new System.Drawing.Size(20, 23);
             this.label4.TabIndex = 46;
             this.label4.Text = "_";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label9
             // 
@@ -1055,6 +1060,7 @@
             this.label9.Size = new System.Drawing.Size(139, 23);
             this.label9.TabIndex = 45;
             this.label9.Text = "(+964) 0750 101 10101";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -1066,6 +1072,7 @@
             this.label7.Size = new System.Drawing.Size(97, 23);
             this.label7.TabIndex = 43;
             this.label7.Text = "Jaky Konhenz";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -1077,6 +1084,18 @@
             this.label8.Size = new System.Drawing.Size(164, 19);
             this.label8.TabIndex = 44;
             this.label8.Text = "jaky.konhenz@example.com";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox15.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 4;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // pictureBox5
             // 
@@ -1128,15 +1147,11 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox15
+            // timer1
             // 
-            this.pictureBox15.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox15.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 4;
-            this.pictureBox15.TabStop = false;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Patient_List
             // 
@@ -1162,12 +1177,12 @@
             this.guna2ShadowPanel4.PerformLayout();
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1241,5 +1256,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
