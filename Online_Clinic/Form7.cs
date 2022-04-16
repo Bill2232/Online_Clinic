@@ -51,16 +51,8 @@ namespace Online_Clinic
             OpenChildForm(new Forms.Overview(), sender);
             pictureBox3.Image = pictureBox8.Image;
             label5.Visible = true;
-
-            con.Open();
-            SqlCommand command = new SqlCommand("select name ,specialization from doctor where email ='" + email + "'", con);
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                label4.Text = "Dr " + Convert.ToString(reader.GetValue(0));
-                label3.Text = Convert.ToString(reader.GetValue(1));
-            }
-            con.Close();
+            label4.Text = Forms.Overview.name;
+            label3.Text = Forms.Overview.specialization;
         }
 
         private void label1_Click(object sender, EventArgs e)

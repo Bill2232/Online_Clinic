@@ -14,7 +14,8 @@ namespace Online_Clinic.Forms
     public partial class Overview : Form
     {
         public string email = Form1.email;
-
+        public static string name;
+        public static string specialization;
         SqlConnection con = new SqlConnection(@"workstation id=AWDsqlonline.mssql.somee.com;packet size=4096;user id=mustafaalsharef_SQLLogin_1;pwd=7aczijc3l9;data source=AWDsqlonline.mssql.somee.com;persist security info=False;initial catalog=AWDsqlonline");
         SqlCommand cmd;
         bool isAway = false;
@@ -53,7 +54,7 @@ namespace Online_Clinic.Forms
             "SELECT  COUNT (*) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "'" +
             "SELECT  COUNT (*) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state = 'in progress'" +
              "SELECT  COUNT (*) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state = 'accepted'"+
-            "select name from doctor where email = '" + email+"'"+
+            "select name , specialization from doctor where email = '" + email+"'"+
               "select phone_secretary from doctor where email ='" + email + "'" +
               "select Address from Clinic_Loc  where email ='" + email + "'"
               , con);
@@ -283,7 +284,10 @@ namespace Online_Clinic.Forms
             }
             reader.NextResult();
             while (reader.Read())
+            {
                 label2.Text = "Dr " + Convert.ToString(reader.GetValue(0));
+                label14.Text = Convert.ToString(reader.GetValue(0));
+            }
 
             reader.NextResult();
             while (reader.Read())
@@ -294,6 +298,8 @@ namespace Online_Clinic.Forms
 
 
             con.Close();
+            name = label2.Text;
+            specialization = label14.Text;
         }
         //
             public Overview()
