@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,9 @@ namespace Online_Clinic
 {
     public partial class Form7 : KryptonForm
     {
+        SqlConnection con = new SqlConnection(@"workstation id=AWDsqlonline.mssql.somee.com;packet size=4096;user id=mustafaalsharef_SQLLogin_1;pwd=7aczijc3l9;data source=AWDsqlonline.mssql.somee.com;persist security info=False;initial catalog=AWDsqlonline");
+        SqlCommand cmd;
+        public string email = Form1.email;
         private Form activeForm;
 
         private void OpenChildForm(Form childForm, object btnSender)
@@ -43,6 +47,16 @@ namespace Online_Clinic
             OpenChildForm(new Forms.Overview(), sender);
             pictureBox3.Image = pictureBox8.Image;
             label5.Visible = true;
+
+            con.Open();
+            SqlCommand command = new SqlCommand("select name ,specialization from doctor where email ='" + email + "'", con);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                label4.Text = "Dr " + Convert.ToString(reader.GetValue(0));
+                label3.Text = Convert.ToString(reader.GetValue(1));
+            }
+            con.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
