@@ -106,7 +106,7 @@ namespace Online_Clinic
                         }
                         else
                         {
-                            MessageBox.Show("the code is not corect");
+                            label3.Visible = true;
 
                         }
                         break;
