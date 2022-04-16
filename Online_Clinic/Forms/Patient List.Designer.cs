@@ -44,7 +44,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label33 = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label27 = new System.Windows.Forms.Label();
@@ -62,7 +60,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label19 = new System.Windows.Forms.Label();
@@ -71,7 +68,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label13 = new System.Windows.Forms.Label();
@@ -80,7 +76,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -94,19 +89,24 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.guna2ShadowPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.guna2ShadowPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.guna2ShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2ShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2ShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +116,7 @@
             this.label24.BackColor = System.Drawing.SystemColors.Control;
             this.label24.Font = new System.Drawing.Font("Poppins Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
-            this.label24.Location = new System.Drawing.Point(12, -5);
+            this.label24.Location = new System.Drawing.Point(10, -4);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(67, 84);
             this.label24.TabIndex = 32;
@@ -127,17 +127,18 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(75, 24);
+            this.label21.Location = new System.Drawing.Point(71, 24);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(73, 26);
             this.label21.TabIndex = 33;
             this.label21.Text = "patients";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // guna2ShadowPanel16
             // 
             this.guna2ShadowPanel16.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel16.FillColor = System.Drawing.Color.Silver;
-            this.guna2ShadowPanel16.Location = new System.Drawing.Point(176, 3);
+            this.guna2ShadowPanel16.Location = new System.Drawing.Point(176, 10);
             this.guna2ShadowPanel16.Name = "guna2ShadowPanel16";
             this.guna2ShadowPanel16.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel16.ShadowDepth = 0;
@@ -148,7 +149,7 @@
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Silver;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(-53, 60);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(3, 60);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 0;
@@ -159,7 +160,7 @@
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.Silver;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(-58, -5);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(3, 3);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 0;
@@ -203,10 +204,15 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.guna2ShadowPanel2);
             this.panel1.Controls.Add(this.guna2ShadowPanel8);
+            this.panel1.Controls.Add(this.guna2ShadowPanel1);
+            this.panel1.Controls.Add(this.guna2ShadowPanel16);
             this.panel1.Controls.Add(this.guna2ShadowPanel7);
+            this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.guna2ShadowPanel6);
             this.panel1.Controls.Add(this.guna2ShadowPanel5);
+            this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.guna2ShadowPanel4);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label6);
@@ -354,16 +360,6 @@
             this.label44.TabIndex = 44;
             this.label44.Text = "jaky.konhenz@example.com";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox5.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
             // guna2ShadowPanel7
             // 
             this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
@@ -495,16 +491,6 @@
             this.label38.Size = new System.Drawing.Size(164, 19);
             this.label38.TabIndex = 44;
             this.label38.Text = "jaky.konhenz@example.com";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
             // 
             // guna2ShadowPanel6
             // 
@@ -638,16 +624,6 @@
             this.label32.TabIndex = 44;
             this.label32.Text = "jaky.konhenz@example.com";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
             // guna2ShadowPanel5
             // 
             this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
@@ -779,16 +755,6 @@
             this.label26.Size = new System.Drawing.Size(164, 19);
             this.label26.TabIndex = 44;
             this.label26.Text = "jaky.konhenz@example.com";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // guna2ShadowPanel4
             // 
@@ -922,16 +888,6 @@
             this.label18.TabIndex = 44;
             this.label18.Text = "jaky.konhenz@example.com";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Online_Clinic.Properties.Resources.user__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -998,6 +954,7 @@
             this.guna2ShadowPanel3.Controls.Add(this.label7);
             this.guna2ShadowPanel3.Controls.Add(this.label8);
             this.guna2ShadowPanel3.Controls.Add(this.pictureBox15);
+            this.guna2ShadowPanel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(253)))));
             this.guna2ShadowPanel3.Location = new System.Drawing.Point(8, 130);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
@@ -1006,6 +963,8 @@
             this.guna2ShadowPanel3.ShadowShift = 0;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(1090, 66);
             this.guna2ShadowPanel3.TabIndex = 41;
+            this.guna2ShadowPanel3.CursorChanged += new System.EventHandler(this.guna2ShadowPanel3_CursorChanged);
+            this.guna2ShadowPanel3.Click += new System.EventHandler(this.guna2ShadowPanel3_Click);
             // 
             // kryptonButton1
             // 
@@ -1119,6 +1078,56 @@
             this.label8.TabIndex = 44;
             this.label8.Text = "jaky.konhenz@example.com";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox5.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Online_Clinic.Properties.Resources.user__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox15
             // 
             this.pictureBox15.Image = global::Online_Clinic.Properties.Resources.user__4_;
@@ -1135,11 +1144,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1101, 707);
-            this.Controls.Add(this.guna2ShadowPanel2);
-            this.Controls.Add(this.guna2ShadowPanel1);
-            this.Controls.Add(this.guna2ShadowPanel16);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.panel1);
             this.Name = "Patient_List";
             this.Text = "Patient List";
@@ -1148,24 +1152,23 @@
             this.panel1.PerformLayout();
             this.guna2ShadowPanel8.ResumeLayout(false);
             this.guna2ShadowPanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.guna2ShadowPanel7.ResumeLayout(false);
             this.guna2ShadowPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.guna2ShadowPanel6.ResumeLayout(false);
             this.guna2ShadowPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.guna2ShadowPanel5.ResumeLayout(false);
             this.guna2ShadowPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.guna2ShadowPanel4.ResumeLayout(false);
             this.guna2ShadowPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

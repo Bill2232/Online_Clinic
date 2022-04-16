@@ -1,6 +1,6 @@
 ﻿namespace Online_Clinic.Forms
 {
-    partial class Calendar
+    partial class Patient_Details
     {
         /// <summary>
         /// Required designer variable.
@@ -34,24 +34,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(12, 175);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(304, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(772, 58);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Calendar will be available soon";
+            this.label1.Size = new System.Drawing.Size(201, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "this patient";
             // 
-            // Calendar
+            // Patient_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(907, 503);
             this.Controls.Add(this.label1);
-            this.Name = "Calendar";
-            this.Text = "Calendar";
+            this.Name = "Patient_Details";
+            this.Text = "Patient Details";
             this.ResumeLayout(false);
             this.PerformLayout();
 

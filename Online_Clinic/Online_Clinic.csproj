@@ -106,12 +106,6 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +123,12 @@
     </Compile>
     <Compile Include="Forms\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient Details.Designer.cs">
+      <DependentUpon>Patient Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Patient List.cs">
       <SubType>Form</SubType>
@@ -174,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient Details.resx">
+      <DependentUpon>Patient Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patient List.resx">
       <DependentUpon>Patient List.cs</DependentUpon>

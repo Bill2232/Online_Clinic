@@ -19,6 +19,7 @@ namespace Online_Clinic
         public string email = Form1.email;
         private Form activeForm;
 
+
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm == childForm)
@@ -155,7 +156,7 @@ namespace Online_Clinic
 
         private void label11_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
