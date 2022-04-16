@@ -101,12 +101,12 @@ namespace Online_Clinic
                         UseDefaultCredentials = false,
                         Credentials = new NetworkCredential("support@awd.somee.com", "Jasba@ya%dee#")
                     };
-                    client.Send("support@awd.somee.com", email, "Welcome to Online Clinc", "HI " + name + "\nThank you for using AWD");
+                    client.Send("support@awd.somee.com", email, "Welcome to Online Clinc", "HI " + name + "\nThank you for using Online Clinic");
                     //
 
 
-                    DialogResult dialogResult = MessageBox.Show("your account is sucssfully created!!");
-                    Form1 f = new Form1();
+                  //  DialogResult dialogResult = MessageBox.Show("your account is sucssfully created!!");
+                    Form5 f = new Form5();
                     f.Show();
                     this.Hide();
                 }
