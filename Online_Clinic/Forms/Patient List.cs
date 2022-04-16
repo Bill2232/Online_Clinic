@@ -21,5 +21,10 @@ namespace Online_Clinic.Forms
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
