@@ -21,10 +21,11 @@ namespace Online_Clinic
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
-            if (activeForm != null)
+            if (activeForm == childForm)
             {
                 activeForm.Close();
             }
+           // else if(activeForm = childForm) 
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -35,6 +36,8 @@ namespace Online_Clinic
             childForm.Show();
             label5.Text = childForm.Text;
             pictureBox3.Image = childForm.BackgroundImage;
+            
+
         }
 
         public Form7()
@@ -66,9 +69,12 @@ namespace Online_Clinic
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Overview(), sender);
-            pictureBox3.Image = pictureBox8.Image;
-            label5.Visible = true;
+            if (activeForm.Text != "Overview")
+            {
+                OpenChildForm(new Forms.Overview(), sender);
+                pictureBox3.Image = pictureBox8.Image;
+                label5.Visible = true;
+            }
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -78,26 +84,38 @@ namespace Online_Clinic
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Calendar(), sender);
-            pictureBox3.Image = pictureBox7.Image;
+            if (activeForm.Text != "Calendar")
+            {
+                OpenChildForm(new Forms.Calendar(), sender);
+                pictureBox3.Image = pictureBox7.Image;
+            }
         }
 
         private void buttonPatientList_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Patient_List(), sender);
-            pictureBox3.Image = pictureBox6.Image;
+            if (activeForm.Text != "Patient List")
+            {
+                OpenChildForm(new Forms.Patient_List(), sender);
+                pictureBox3.Image = pictureBox6.Image;
+            }
         }
 
         private void buttonMessages_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Mwssages(), sender);
-            pictureBox3.Image = pictureBox4.Image;
+            if (activeForm.Text != "Mwssages")
+            {
+                OpenChildForm(new Forms.Mwssages(), sender);
+                pictureBox3.Image = pictureBox4.Image;
+            }
         }
 
         private void buttonSettings_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Settings(), sender);
-            pictureBox3.Image = pictureBox5.Image;
+            if (activeForm.Text != "Settings")
+            {
+                OpenChildForm(new Forms.Settings(), sender);
+                pictureBox3.Image = pictureBox5.Image;
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
