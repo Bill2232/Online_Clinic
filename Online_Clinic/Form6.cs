@@ -102,7 +102,7 @@ namespace Online_Clinic
                             isCheaked = true;
                             Form7 ww = new Form7();
                             ww.Show();
-                            this.Hide();
+                            this.Close();
                         }
                         else
                         {

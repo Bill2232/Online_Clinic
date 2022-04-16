@@ -108,7 +108,7 @@ namespace Online_Clinic
                   //  DialogResult dialogResult = MessageBox.Show("your account is sucssfully created!!");
                     Form5 f = new Form5();
                     f.Show();
-                    this.Hide();
+                    this.Close();
                 }
 
             }
