@@ -200,6 +200,11 @@ namespace Online_Clinic
 
         private void button1_Click(object sender, EventArgs e)
         {
+            email = "0afa11ba9556@tmail.ws";
+            con.Open();
+            cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
             Form7 a = new Form7();
             a.Show();
         }
