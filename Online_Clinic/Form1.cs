@@ -57,7 +57,7 @@ namespace Online_Clinic
                                 Form6 f = new Form6();
                                 email = kryptonTextBox1.Text;
                                 f.Show();
-                                this.Hide();
+                                this.Close();
 
                             }
                             else
@@ -65,7 +65,7 @@ namespace Online_Clinic
                                 Form7 fe = new Form7();
                                 email = kryptonTextBox1.Text;
                                 fe.Show();
-                                this.Hide();
+                                this.Close();
                                 con.Open();
                                 cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
                                 cmd.ExecuteNonQuery();
@@ -90,7 +90,7 @@ namespace Online_Clinic
                                 email = kryptonTextBox1.Text;
                                 Form6 g = new Form6();
                                 g.Show();
-                                this.Hide();
+                                this.Close();
                             }
                             else
                             {
@@ -129,7 +129,7 @@ namespace Online_Clinic
         {
             Form2 a = new Form2();
             a.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -141,7 +141,7 @@ namespace Online_Clinic
         
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+           // Application.Exit();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -207,6 +207,7 @@ namespace Online_Clinic
             con.Close();
             Form7 a = new Form7();
             a.Show();
+            this.Close();
         }
     }
 }

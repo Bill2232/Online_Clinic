@@ -26,14 +26,14 @@ namespace Online_Clinic
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             Form3 a = new Form3();
-            this.Hide();
+            this.Close();
             a.Show();
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             Form4 a = new Form4();
-            this.Hide();
+            this.Close();
             a.Show();
         }
 

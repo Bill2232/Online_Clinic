@@ -87,7 +87,7 @@ namespace Online_Clinic
 
                     Form5 f = new Form5();
                     f.Show();
-                    this.Hide();
+                    this.Close();
                 }
 
             }
