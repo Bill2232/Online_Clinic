@@ -212,6 +212,7 @@ namespace Online_Clinic
 
         private void button2_Click(object sender, EventArgs e)
         {
+            email = "test@.com";
             Form8 a = new Form8();
             a.Show();
             this.Close();

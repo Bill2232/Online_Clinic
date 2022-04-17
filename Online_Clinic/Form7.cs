@@ -29,8 +29,13 @@ namespace Online_Clinic
               , con);
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
+            {
+                guna2ShadowPanel2.BringToFront();
                 label30.Text = reader.GetValue(5).ToString();
-
+            }
+               
+            con.Close();
+            
         }
             private void OpenChildForm(Form childForm, object btnSender)
         {
