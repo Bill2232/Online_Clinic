@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace Online_Clinic.Forms
 {
-    public partial class Mwssages : Form
+    public partial class FormVerificationEdit : KryptonForm
     {
-        public Mwssages()
+        public FormVerificationEdit()
         {
             InitializeComponent();
+        }
+
+        private void FormVerificationEdit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

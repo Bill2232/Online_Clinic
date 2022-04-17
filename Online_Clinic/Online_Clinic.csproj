@@ -106,6 +106,12 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Account settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account settings.Designer.cs">
+      <DependentUpon>Account settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,17 +124,23 @@
     <Compile Include="Forms\coming treats.Designer.cs">
       <DependentUpon>coming treats.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormVerificationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVerificationEdit.Designer.cs">
+      <DependentUpon>FormVerificationEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\last treats.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\last treats.Designer.cs">
       <DependentUpon>last treats.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mwssages.cs">
+    <Compile Include="Forms\Messages.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mwssages.Designer.cs">
-      <DependentUpon>Mwssages.cs</DependentUpon>
+    <Compile Include="Forms\Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Overview.cs">
       <SubType>Form</SubType>
@@ -178,17 +190,23 @@
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account settings.resx">
+      <DependentUpon>Account settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\coming treats.resx">
       <DependentUpon>coming treats.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVerificationEdit.resx">
+      <DependentUpon>FormVerificationEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\last treats.resx">
       <DependentUpon>last treats.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mwssages.resx">
-      <DependentUpon>Mwssages.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>

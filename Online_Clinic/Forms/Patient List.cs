@@ -23,12 +23,12 @@ namespace Online_Clinic.Forms
             con.Open();
 
             SqlCommand command = new SqlCommand("SELECT  COUNT (*) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected'" + // count pathin
-             "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "'  ) t where num_row =1" + //get info
+             "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected'  ) t where num_row =1" + //get info
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'accepted') t  where num_row = 1" + // next booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1" + // last booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1" + // first booking
               //end of sql first panel
-             "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "'  ) t where num_row =2" + //get info
+             "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected' ) t where num_row =2" + //get info
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'accepted') t  where num_row = 1" + // next booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'done') t  where num_row = 1" + // last booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label18.Text + "' and state = 'done') t  where num_row = 1"  // first booking
@@ -77,8 +77,8 @@ namespace Online_Clinic.Forms
             if (reader.Read())
             {
                 guna2ShadowPanel3.Visible = true;
-                label17.Text = reader.GetValue(0).ToString();
-                label18.Text = reader.GetValue(1).ToString();
+                label17.Text = reader.GetValue(1).ToString();
+                label18.Text = reader.GetValue(0).ToString();
                 label16.Text = reader.GetValue(2).ToString();
             }
             else
@@ -147,7 +147,7 @@ namespace Online_Clinic.Forms
 
         private void guna2ShadowPanel3_Click(object sender, EventArgs e)
         {
-            Pemail = label7.Text;
+            Pemail = label8.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 
@@ -158,6 +158,7 @@ namespace Online_Clinic.Forms
 
         private void label7_Click(object sender, EventArgs e)
         {
+            Pemail = label8.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 
@@ -168,6 +169,7 @@ namespace Online_Clinic.Forms
 
         private void label9_Click(object sender, EventArgs e)
         {
+            Pemail = label8.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 

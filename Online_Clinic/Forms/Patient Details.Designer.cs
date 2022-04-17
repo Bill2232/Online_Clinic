@@ -56,11 +56,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,6 +99,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton3.TabIndex = 35;
             this.kryptonButton3.Values.Text = "Send Message";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // panel2
             // 
@@ -456,6 +457,7 @@
             this.buttonOverview.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.buttonOverview.TabIndex = 53;
             this.buttonOverview.Values.Text = "save note";
+            this.buttonOverview.Click += new System.EventHandler(this.buttonOverview_Click);
             // 
             // guna2TextBox1
             // 
@@ -510,6 +512,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1023, 205);
             this.panel5.TabIndex = 39;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.label17.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label17.Location = new System.Drawing.Point(315, 71);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(354, 58);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Coming soon!";
             // 
             // guna2ShadowPanel1
             // 
@@ -738,18 +752,6 @@
             this.kryptonButton2.TabIndex = 54;
             this.kryptonButton2.Values.Text = "Upcoming Treatments";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.label17.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label17.Location = new System.Drawing.Point(315, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(354, 58);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Coming soon!";
             // 
             // Patient_Details
             // 

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Online_Clinic.Forms
 {
-    public partial class Settings : Form
+    public partial class Messages : Form
     {
-        public Settings()
+        public Messages()
         {
             InitializeComponent();
-        }
-
-        private void kryptonButton2_Click(object sender, EventArgs e)
-        {
-            Account_settings a = new Account_settings();
-            a.ShowDialog();
         }
     }
 }

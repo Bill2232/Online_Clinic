@@ -97,7 +97,7 @@ namespace Online_Clinic
         {
             if (activeForm.Text != "Mwssages")
             {
-                OpenChildForm(new Forms.Mwssages(), sender);
+                OpenChildForm(new Forms.Messages(), sender);
                 pictureBox3.Image = pictureBox4.Image;
             }
         }
