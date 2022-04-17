@@ -13,6 +13,7 @@ namespace Online_Clinic.Forms
 {
     public partial class Overview : Form
     {
+        private Form activeForm;
         public string email = Form1.email;
         public static string name;
         public static string specialization;
@@ -302,7 +303,8 @@ namespace Online_Clinic.Forms
             specialization = label14.Text;
         }
         //
-            public Overview()
+      
+        public Overview()
         {
             InitializeComponent();
         }
@@ -355,6 +357,11 @@ namespace Online_Clinic.Forms
         private void Overview_Load(object sender, EventArgs e)
         {
             update_data();
+           
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
            
         }
     }

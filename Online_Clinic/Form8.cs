@@ -26,14 +26,9 @@ namespace Online_Clinic
 
         }
 
-        private void kryptonButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2ComboBox1_Click(object sender, EventArgs e)
         {
-            //guna2ComboBox1.Items.RemoveAt(4);
+
         }
 
         private void guna2ComboBox1_Leave(object sender, EventArgs e)
@@ -44,38 +39,70 @@ namespace Online_Clinic
 
         private void kryptonButton2_Click_1(object sender, EventArgs e)
         {
+            if (kryptonTextBox1.Text != "Search by Name")
+            {
+                con.Open();
+                string email = Form1.email;
+           
+                SqlCommand command = new SqlCommand(
+                 " SELECT * FROM doctor WHERE name LIKE '%"+ kryptonTextBox1.Text + "%' and  specialization = '" + guna2ComboBox1.SelectedItem.ToString() + "'" +
+                 " select userID from Patient where email = '" + email + "'"
+                  , con);
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    guna2ShadowPanel3.Visible = true;
+                    panel1.Dock = DockStyle.Top;
+                    guna2ShadowPanel3.Dock = DockStyle.Top;
+                    label1.Text = reader.GetValue(0).ToString();
+                    label7.Text = reader.GetValue(1).ToString();
+                    label9.Text = reader.GetValue(7).ToString();
+                    label8.Text = reader.GetValue(8).ToString();
+                    label11.Text = reader.GetValue(10).ToString(); 
+                }
+
+
+                reader.NextResult();
+                while (reader.Read())
+                {
+                    label2.Text = reader.GetValue(0).ToString();
+
+                }
+                con.Close();
             
-            con.Open();
-            string email = Form1.email;
-            SqlCommand command = new SqlCommand("select name ,email ,phone_secretary , Dstate from doctor where specialization = '" + guna2ComboBox1.SelectedItem.ToString() + "' and name = '"+kryptonTextBox1.Text+"' ;"+
-               " SELECT doctorId from doctor where email = '"+label8.Text+"' "+
-              " select userID from Patient where email = '"+email+"'"
-              , con);
-            SqlDataReader reader = command.ExecuteReader();
-
-            if (reader.Read())
-            {
-                guna2ShadowPanel3.Visible = true;
-                panel1.Dock = DockStyle.Top;
-                guna2ShadowPanel3.Dock = DockStyle.Top;
-                label7.Text=reader.GetValue(0).ToString();
-                label8.Text=reader.GetValue(1).ToString();
-                label9.Text=reader.GetValue(2).ToString();
-                label11.Text=reader.GetValue(3).ToString();
             }
-            reader.NextResult();
-            while (reader.Read())
+            else
             {
-                label1.Text=reader.GetValue(0).ToString();
+                con.Open();
+                string email = Form1.email;
+                SqlCommand command = new SqlCommand("select * from doctor where specialization = '" + guna2ComboBox1.SelectedItem.ToString() + "';" +
+                  " select userID from Patient where email = '" + email + "'"
+                  , con);
+                SqlDataReader reader = command.ExecuteReader();
 
-            }
-            reader.NextResult();
-            while (reader.Read())
-            {
-                label2.Text = reader.GetValue(0).ToString();
+                if (reader.Read())
+                {
+                    guna2ShadowPanel3.Visible = true;
+                    panel1.Dock = DockStyle.Top;
+                    guna2ShadowPanel3.Dock = DockStyle.Top;
+                    label1.Text = reader.GetValue(0).ToString();
+                    label7.Text = reader.GetValue(1).ToString();
+                    label9.Text = reader.GetValue(7).ToString();
+                    label8.Text = reader.GetValue(8).ToString();
+                    label11.Text = reader.GetValue(10).ToString();
+                }
 
+
+                reader.NextResult();
+                while (reader.Read())
+                {
+                    label2.Text = reader.GetValue(0).ToString();
+
+                }
+                con.Close();
+           
             }
-            con.Close();
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -97,9 +124,46 @@ namespace Online_Clinic
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             con.Open();
-            cmd = new SqlCommand("INSERT INTO booking (userID, doctorID, time, date,  state)VALUES('"+label2.Text+"','"+label1.Text+"','"+ kryptonTextBox2.Text+"','"+ kryptonTextBox1.Text + "','in progress'  ); ");
+            cmd = new SqlCommand("INSERT INTO booking (userID, doctorID, time, date,  state)VALUES('"+label2.Text+"','"+label1.Text+"','"+ kryptonTextBox2.Text+"','"+ kryptonTextBox1.Text + "','in progress'  ); ",con);
             cmd.ExecuteNonQuery();
             con.Close();
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "Search by Name")
+                kryptonTextBox1.Text = "";
+
+        }
+
+        private void kryptonTextBox1_Click(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "Search by Name")
+                kryptonTextBox1.Text = "";
+        }
+
+        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "Search by Name")
+                kryptonTextBox1.Text = "";
+        }
+
+        private void kryptonTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "")
+                kryptonTextBox1.Text = "Search by Name";
+        }
+
+        private void kryptonTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+                kryptonButton2.PerformClick();
+        }
+
+        private void kryptonTextBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            
         }
     }
 }

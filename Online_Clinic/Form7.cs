@@ -30,8 +30,12 @@ namespace Online_Clinic
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                guna2ShadowPanel2.BringToFront();
-                label30.Text = reader.GetValue(5).ToString();
+                guna2ShadowPanel2.Visible = true;
+               // guna2ShadowPanel2.BringToFront();
+                
+                //guna2ShadowPanel2.Dock = DockStyle.Fill;
+                label7.Text = reader.GetValue(1).ToString();
+                MessageBox.Show(label7.Text);
             }
                
             con.Close();
@@ -215,6 +219,11 @@ namespace Online_Clinic
             cmd = new SqlCommand("UPDATE booking SET state='accepted' WHERE orderno='" + label29.Text + "'", con);
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
