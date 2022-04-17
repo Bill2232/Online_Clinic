@@ -18,9 +18,21 @@ namespace Online_Clinic
         SqlCommand cmd;
         public string email = Form1.email;
         private Form activeForm;
+        bool isAway = false;
+
+        public void update_data()
+        {
+            con.Open();
 
 
-        private void OpenChildForm(Form childForm, object btnSender)
+            SqlCommand command = new SqlCommand("SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.time) AS num_row, patient.name, patient.mobile_numbur, booking.time, booking.title, booking.orderno from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email+ "'and state = 'in progress') t where num_row = 1 "
+              , con);
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+                label30.Text = reader.GetValue(5).ToString();
+
+        }
+            private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm == childForm)
             {
@@ -119,6 +131,10 @@ namespace Online_Clinic
         private void Form7_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+            con.Open();
+            cmd = new SqlCommand("UPDATE doctor SET Dstate='offline' WHERE email='" + email + "'", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         private void kryptonButton2_Click_1(object sender, EventArgs e)
@@ -154,6 +170,46 @@ namespace Online_Clinic
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            update_data();
+            if (isAway)
+            {
+                pictureBox17.Visible = true;
+                pictureBox16.Visible = false;
+                con.Open();
+                cmd = new SqlCommand("UPDATE doctor SET Dstate='away' WHERE email='" + email + "'", con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+        }
+
+        private void Form7_Activated(object sender, EventArgs e)
+        {
+            isAway = false;
+            pictureBox17.Visible = false;
+            pictureBox16.Visible = true;
+        }
+
+        private void Form7_Deactivate(object sender, EventArgs e)
+        {
+            isAway = true;
+
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            cmd = new SqlCommand("UPDATE booking SET state='accepted' WHERE orderno='" + label29.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

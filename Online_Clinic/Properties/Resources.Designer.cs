@@ -63,9 +63,39 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _191_1916898_status_skype_away_icon_hd_png_download {
+            get {
+                object obj = ResourceManager.GetObject("191-1916898_status-skype-away-icon-hd-png-download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _234_2341004_glossy_red_icon_button_clip_art_at_clker {
+            get {
+                object obj = ResourceManager.GetObject("234-2341004_glossy-red-icon-button-clip-art-at-clker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _35ed7858074939_59eee21854f6a {
             get {
                 object obj = ResourceManager.GetObject("35ed7858074939.59eee21854f6a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7124045_logout_icon {
+            get {
+                object obj = ResourceManager.GetObject("7124045_logout_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -430,5 +430,14 @@
   <ItemGroup>
     <None Include="Resources\35ed7858074939.59eee21854f6a.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\234-2341004_glossy-red-icon-button-clip-art-at-clker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7124045_logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191-1916898_status-skype-away-icon-hd-png-download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
