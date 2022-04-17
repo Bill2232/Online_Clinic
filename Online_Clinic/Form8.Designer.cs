@@ -113,7 +113,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Online_Clinic.Properties.Resources.home;
+            //this.pictureBox4.Image = global::Online_Clinic.Properties.Resources.home;
             this.pictureBox4.Location = new System.Drawing.Point(38, 525);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 31);
@@ -123,7 +123,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Online_Clinic.Properties.Resources.calendar__7_;
+            //this.pictureBox3.Image = global::Online_Clinic.Properties.Resources.calendar__7_;
             this.pictureBox3.Location = new System.Drawing.Point(132, 525);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 31);

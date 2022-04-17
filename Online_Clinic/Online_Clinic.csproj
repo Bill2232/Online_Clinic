@@ -448,5 +448,8 @@
   <ItemGroup>
     <None Include="Resources\191-1916898_status-skype-away-icon-hd-png-download.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow %287%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
