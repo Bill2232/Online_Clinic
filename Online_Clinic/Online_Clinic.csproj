@@ -421,5 +421,14 @@
   <ItemGroup>
     <None Include="Resources\left-arrow %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20210912-11396-eb57md.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35ed7858074939.59eee21854f6a.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

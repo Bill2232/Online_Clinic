@@ -63,7 +63,9 @@ namespace Online_Clinic.Forms
             con.Open();
             SqlCommand command = new SqlCommand("SELECT  name,gender ,birthday,mobile_numbur from Patient  where email = '" + label8.Text + "'" +
                 "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno ASC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email = '" + label8.Text + "' and state = 'done') t  where num_row = 1"+
-                "SELECT NOTE FROM details where patient_email  ='" + label8.Text + "' and doctor_email = '" + email + "'"
+                "SELECT NOTE FROM details where patient_email  ='" + label8.Text + "' and doctor_email = '" + email + "'" +
+                "SELECT  COUNT (*) FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'accepted') t "  +// upcoming
+               " SELECT COUNT (*) FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email = '" + label8.Text + "' and state = 'done') t"
                 , con);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -83,8 +85,16 @@ namespace Online_Clinic.Forms
             reader.NextResult();
             while (reader.Read())
                 guna2TextBox1.Text = reader.GetValue(0).ToString();
+            reader.NextResult();
+            while (reader.Read())
+                label1.Text = reader.GetValue(0).ToString();
+            reader.NextResult();
+            while(reader.Read())
+                label24.Text = reader.GetValue(0).ToString();
 
-            con.Close();
+
+
+                con.Close();
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
@@ -122,6 +132,11 @@ namespace Online_Clinic.Forms
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

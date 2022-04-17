@@ -63,6 +63,16 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _35ed7858074939_59eee21854f6a {
+            get {
+                object obj = ResourceManager.GetObject("35ed7858074939.59eee21854f6a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add__1_ {
             get {
                 object obj = ResourceManager.GetObject("add (1)", resourceCulture);
@@ -363,6 +373,16 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_processing20210912_11396_eb57md {
+            get {
+                object obj = ResourceManager.GetObject("image_processing20210912-11396-eb57md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left_arrow {
             get {
                 object obj = ResourceManager.GetObject("left-arrow", resourceCulture);
@@ -386,6 +406,16 @@ namespace Online_Clinic.Properties {
         internal static System.Drawing.Bitmap left_arrow__2_ {
             get {
                 object obj = ResourceManager.GetObject("left-arrow (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loader {
+            get {
+                object obj = ResourceManager.GetObject("loader", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

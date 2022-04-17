@@ -46,8 +46,8 @@ namespace Online_Clinic.Forms
             if (reader.Read())
             {
                 guna2ShadowPanel3.Visible = true;
-                label7.Text = reader.GetValue(0).ToString();
-                label8.Text = reader.GetValue(1).ToString();
+                label7.Text = reader.GetValue(1).ToString();
+                label8.Text = reader.GetValue(0).ToString();
                 label9.Text = reader.GetValue(2).ToString();
             }
             else
@@ -127,7 +127,9 @@ namespace Online_Clinic.Forms
 
         private void Patient_List_Load(object sender, EventArgs e)
         {
-
+            panel2.Visible = true;
+            update_data();
+            panel2.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -153,6 +155,7 @@ namespace Online_Clinic.Forms
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
+            Pemail = label8.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 
@@ -164,6 +167,7 @@ namespace Online_Clinic.Forms
 
         private void label8_Click(object sender, EventArgs e)
         {
+            Pemail = label8.Text;
             OpenChildForm(new Forms.Patient_Details(), sender);
         }
 
@@ -191,6 +195,21 @@ namespace Online_Clinic.Forms
         private void timer1_Tick(object sender, EventArgs e)
         {
             update_data();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -2074,6 +2074,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelHeder);
             this.Controls.Add(this.panelMenu);
+            this.MaximumSize = new System.Drawing.Size(1341, 868);
+            this.MinimumSize = new System.Drawing.Size(1341, 868);
             this.Name = "Form7";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
