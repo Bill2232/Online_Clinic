@@ -114,9 +114,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(10, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 26);
+            this.label1.Size = new System.Drawing.Size(135, 26);
             this.label1.TabIndex = 53;
-            this.label1.Text = "Date of Birth";
+            this.label1.Text = "certificate name";
             // 
             // label2
             // 
@@ -493,7 +493,7 @@
             this.Controls.Add(this.label30);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.MaximumSize = new System.Drawing.Size(583, 860);
-            this.MinimumSize = new System.Drawing.Size(583, 860);
+            this.MinimumSize = new System.Drawing.Size(583, 858);
             this.Name = "Account_settings";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
