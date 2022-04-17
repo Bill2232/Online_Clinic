@@ -209,5 +209,12 @@ namespace Online_Clinic
             a.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form8 a = new Form8();
+            a.Show();
+            this.Close();
+        }
     }
 }

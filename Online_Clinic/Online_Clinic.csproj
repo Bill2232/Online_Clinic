@@ -106,6 +106,12 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Account settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Account settings.resx">
       <DependentUpon>Account settings.cs</DependentUpon>
@@ -429,6 +438,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\35ed7858074939.59eee21854f6a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %287%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

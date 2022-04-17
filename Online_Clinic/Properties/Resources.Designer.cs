@@ -183,6 +183,26 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar__6_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar__7_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caution {
             get {
                 object obj = ResourceManager.GetObject("caution", resourceCulture);
@@ -373,6 +393,16 @@ namespace Online_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home {
+            get {
+                object obj = ResourceManager.GetObject("home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_processing20210912_11396_eb57md {
             get {
                 object obj = ResourceManager.GetObject("image_processing20210912-11396-eb57md", resourceCulture);
@@ -476,6 +506,16 @@ namespace Online_Clinic.Properties {
         internal static System.Drawing.Bitmap message__2_ {
             get {
                 object obj = ResourceManager.GetObject("message (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap message__3_ {
+            get {
+                object obj = ResourceManager.GetObject("message (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -666,6 +706,26 @@ namespace Online_Clinic.Properties {
         internal static System.Drawing.Bitmap user__5_ {
             get {
                 object obj = ResourceManager.GetObject("user (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user__6_ {
+            get {
+                object obj = ResourceManager.GetObject("user (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user__8_ {
+            get {
+                object obj = ResourceManager.GetObject("user (8)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
