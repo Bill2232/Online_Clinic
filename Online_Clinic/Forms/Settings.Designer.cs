@@ -66,6 +66,7 @@
             this.guna2ComboBox1.Location = new System.Drawing.Point(351, 39);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(170, 36);
+            this.guna2ComboBox1.StartIndex = 0;
             this.guna2ComboBox1.TabIndex = 52;
             // 
             // label1
@@ -116,6 +117,9 @@
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.SystemColors.Control;
             this.kryptonButton2.OverrideDefault.Border.Color1 = System.Drawing.SystemColors.Control;
             this.kryptonButton2.OverrideDefault.Border.Color2 = System.Drawing.SystemColors.Control;
+            this.kryptonButton2.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton2.OverrideDefault.Border.Rounding = 5;
             this.kryptonButton2.OverrideDefault.Border.Width = 1;
             this.kryptonButton2.Size = new System.Drawing.Size(177, 48);

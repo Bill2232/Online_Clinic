@@ -207,6 +207,7 @@
             this.guna2ComboBox1.Location = new System.Drawing.Point(280, 18);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(227, 36);
+            this.guna2ComboBox1.StartIndex = 2;
             this.guna2ComboBox1.TabIndex = 40;
             // 
             // panel1
