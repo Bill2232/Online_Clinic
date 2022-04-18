@@ -65,7 +65,7 @@ namespace Online_Clinic
                                 Form7 fe = new Form7();
                                 email = kryptonTextBox1.Text;
                                 fe.Show();
-                                this.Close();
+                                this.Hide();
                                 con.Open();
                                 cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
                                 cmd.ExecuteNonQuery();
