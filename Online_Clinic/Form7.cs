@@ -215,15 +215,15 @@ namespace Online_Clinic
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            con.Open();
-            cmd = new SqlCommand("UPDATE booking SET state='accepted' WHERE orderno='" + label29.Text + "'", con);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            //con.Open();
+            //cmd = new SqlCommand("UPDATE booking SET state='accepted' WHERE orderno='" + label29.Text + "'", con);
+            //cmd.ExecuteNonQuery();
+            //con.Close();
         }
 
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormNotefications(), sender);
         }
     }
 }
