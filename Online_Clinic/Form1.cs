@@ -53,11 +53,11 @@ namespace Online_Clinic
                             sdaq.Fill(dtddd);
                             if (dtddd.Rows[0][0].ToString() == "1")
                             {
-                                MessageBox.Show("doctor but u have to vr ur email");
+                                //MessageBox.Show("doctor but u have to vr ur email");
                                 Form6 f = new Form6();
                                 email = kryptonTextBox1.Text;
                                 f.Show();
-                                this.Close();
+                                this.Hide();
 
                             }
                             else
@@ -70,7 +70,7 @@ namespace Online_Clinic
                                 cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
                                 cmd.ExecuteNonQuery();
                                 con.Close();
-                                MessageBox.Show("doctor and the email is vertfied");
+                              //  MessageBox.Show("doctor and the email is vertfied");
                             }
                         }
                         break;
@@ -86,16 +86,16 @@ namespace Online_Clinic
                             sdasz.Fill(dtddad);
                             if (dtddad.Rows[0][0].ToString() == "1")
                             {
-                                MessageBox.Show("ur patient but u have to vertfie ur email");
+                                //MessageBox.Show("ur patient but u have to vertfie ur email");
                                 email = kryptonTextBox1.Text;
                                 Form6 g = new Form6();
                                 g.Show();
-                                this.Close();
+                                this.Hide();
                             }
                             else
                             {
                                 email = kryptonTextBox1.Text;
-                                MessageBox.Show("patient and the email is vertfied");
+                               // MessageBox.Show("patient and the email is vertfied");
                             }
                         }
                         break;
@@ -129,7 +129,7 @@ namespace Online_Clinic
         {
             Form2 a = new Form2();
             a.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

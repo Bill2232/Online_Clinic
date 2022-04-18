@@ -48,6 +48,7 @@ namespace Online_Clinic
         {
             Form1 a = new Form1();
             a.Show();
+            this.Hide();
 
         }
 
@@ -75,8 +76,8 @@ namespace Online_Clinic
                 && kryptonTextBox4.Text.Length > 7
                 && kryptonComboBox2.Text != "Month"
                 && kryptonTextBox7.Text != "YYYY"
-                && kryptonTextBox7.Text.Length > 3
-                && Convert.ToInt32(kryptonTextBox6.Text) > 32)
+                && kryptonTextBox7.Text.Length == 4)
+               // && Convert.ToInt32(kryptonTextBox6.Text) > 32)
             {
 
                 if (mail.Rows[0][0].ToString() == "0")
@@ -108,13 +109,15 @@ namespace Online_Clinic
                   //  DialogResult dialogResult = MessageBox.Show("your account is sucssfully created!!");
                     Form5 f = new Form5();
                     f.Show();
-                    this.Close();
+                    this.Hide();
                 }
 
             }
             else
             {
-              //  MessageBox.Show("you have to Complete the fields");
+                MessageBox.Show("you have to Complete the fields");
+                MessageBox.Show(kryptonTextBox4.Text.Length.ToString());
+                MessageBox.Show(kryptonTextBox7.Text.Length.ToString());
                 if (kryptonTextBox1.Text == "" || kryptonTextBox3.Text == "" || kryptonTextBox1.Text == "First name" || kryptonTextBox1.Text == "Last name")
                     label2.ForeColor = Color.Red;
 
@@ -402,7 +405,9 @@ namespace Online_Clinic
             DateTime now = DateTime.Now;
             if(kryptonTextBox7.Text !="")
             age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
+            MessageBox.Show(age.ToString());
             label6.ForeColor = Color.Black;
+            
         }
         private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
         {

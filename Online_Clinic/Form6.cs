@@ -102,7 +102,7 @@ namespace Online_Clinic
                             isCheaked = true;
                             Form7 ww = new Form7();
                             ww.Show();
-                            this.Close();
+                            this.Hide();
                         }
                         else
                         {
@@ -123,9 +123,9 @@ namespace Online_Clinic
                             cmd.ExecuteNonQuery();
                             con.Close();
                             isCheaked = true;
-                           // Form8 qs = new Form8();
-                            //qs.Show();
-                           // this.Hide();
+                            Form8 qs = new Form8();
+                            qs.Show();
+                            this.Hide();
                         }
                         else
                         {

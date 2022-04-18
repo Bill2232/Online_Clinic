@@ -123,6 +123,7 @@ namespace Online_Clinic
             this.linkLabel2.TabIndex = 69;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Log in.";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label9
             // 

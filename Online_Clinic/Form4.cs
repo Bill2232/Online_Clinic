@@ -87,7 +87,7 @@ namespace Online_Clinic
 
                     Form5 f = new Form5();
                     f.Show();
-                    this.Close();
+                    this.Hide();
                 }
 
             }
@@ -403,6 +403,11 @@ namespace Online_Clinic
             kryptonTextBox5.UseSystemPasswordChar = true;
             pictureBox2.Visible = true;
             pictureBox3.Visible = false;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
     

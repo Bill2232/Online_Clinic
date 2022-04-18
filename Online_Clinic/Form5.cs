@@ -26,7 +26,7 @@ namespace Online_Clinic
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             Form1 a = new Form1();
-            this.Close();
+            this.Hide();
             a.Show();
         }
 
