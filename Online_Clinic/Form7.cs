@@ -20,33 +20,15 @@ namespace Online_Clinic
         private Form activeForm;
         bool isAway = false;
 
-        public void update_data()
-        {
-            con.Open();
-
-
-            SqlCommand command = new SqlCommand("SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.time) AS num_row, patient.name, patient.mobile_numbur, booking.time, booking.title, booking.orderno from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email+ "'and state = 'in progress') t where num_row = 1 "
-              , con);
-            SqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
-            {
-                guna2ShadowPanel2.Visible = true;
-               // guna2ShadowPanel2.BringToFront();
-                
-                //guna2ShadowPanel2.Dock = DockStyle.Fill;
-                label7.Text = reader.GetValue(1).ToString();
-                MessageBox.Show(label7.Text);
-            }
-               
-            con.Close();
-            
-        }
+        
             private void OpenChildForm(Form childForm, object btnSender)
         {
+
             if (activeForm == childForm)
             {
                 activeForm.Close();
             }
+            
            // else if(activeForm = childForm) 
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -188,7 +170,7 @@ namespace Online_Clinic
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            update_data();
+            
             if (isAway)
             {
                 pictureBox17.Visible = true;
@@ -223,7 +205,11 @@ namespace Online_Clinic
 
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
+            if (activeForm.Name == "Overview")
             OpenChildForm(new Forms.FormNotefications(), sender);
+            else
+                OpenChildForm(new Forms.Overview(), sender);
+
         }
     }
 }

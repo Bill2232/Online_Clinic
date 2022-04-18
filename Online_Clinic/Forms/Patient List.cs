@@ -22,7 +22,7 @@ namespace Online_Clinic.Forms
         {
             con.Open();
 
-            SqlCommand command = new SqlCommand("SELECT  COUNT (*) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected'" + // count pathin
+            SqlCommand command = new SqlCommand("SELECT  COUNT (DISTINCT email) from booking join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected'" + // count pathin
              "SELECT DISTINCT email , name, mobile_numbur  FROM(SELECT   ROW_NUMBER() OVER(ORDER BY patient.name ) AS num_row, patient.name, patient.email, patient.mobile_numbur   from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and state != 'rejected'  ) t where num_row =1" + //get info
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'accepted') t  where num_row = 1" + // next booking
              "SELECT * FROM(SELECT  ROW_NUMBER() OVER(ORDER BY booking.orderno DESC) AS num_row, booking.date from booking JOIN patient ON booking.userID = patient.userID join doctor on booking.doctorID = doctor.doctorID where doctor.email = '" + email + "' and patient.email ='" + label8.Text + "' and state = 'done') t  where num_row = 1" + // last booking
