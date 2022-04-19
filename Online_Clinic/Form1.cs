@@ -96,6 +96,9 @@ namespace Online_Clinic
                             {
                                 email = kryptonTextBox1.Text;
                                // MessageBox.Show("patient and the email is vertfied");
+                               Form8 s = new Form8();
+                                s.Show();
+                                this.Hide();
                             }
                         }
                         break;
