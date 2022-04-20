@@ -34,6 +34,7 @@
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -127,6 +127,7 @@
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox1.BorderRadius = 5;
+            this.guna2ComboBox1.DisplayMember = "20";
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -135,16 +136,33 @@
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Optometrist",
-            "Dentist",
-            "Gynecologist",
-            "Cardiologist",
-            "chosce spashalize"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(278, 40);
+            "Allergy and immunology",
+            "Anesthesiology",
+            "Dermatology",
+            "Diagnostic radiology",
+            "Emergency medicine",
+            "Family medicine",
+            "Internal medicine",
+            "Medical genetics",
+            "Neurology",
+            "Nuclear medicine",
+            "Obstetrics and gynecology",
+            "Ophthalmology",
+            "Pathology",
+            "Pediatrics",
+            "Physical medicine and rehabilitation",
+            "Preventive medicine",
+            "Psychiatry",
+            "Radiation oncology",
+            "Surgery",
+            "Urology",
+            "specialization"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(278, 39);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(156, 36);
-            this.guna2ComboBox1.StartIndex = 4;
+            this.guna2ComboBox1.StartIndex = 20;
             this.guna2ComboBox1.TabIndex = 0;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             this.guna2ComboBox1.Click += new System.EventHandler(this.guna2ComboBox1_Click);
             this.guna2ComboBox1.Leave += new System.EventHandler(this.guna2ComboBox1_Leave);
             // 
@@ -187,6 +205,18 @@
             this.panel1.Size = new System.Drawing.Size(693, 102);
             this.panel1.TabIndex = 23;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.Location = new System.Drawing.Point(185, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(361, 19);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "*keep \"search by name\" feild if you want to search by spashalize";
             // 
             // guna2ShadowPanel3
             // 
@@ -415,17 +445,6 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "label2";
             this.label2.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(185, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(361, 19);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "*keep \"search by name\" feild if you want to search by spashalize";
             // 
             // Form8
             // 

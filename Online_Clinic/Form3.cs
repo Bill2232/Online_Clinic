@@ -76,8 +76,10 @@ namespace Online_Clinic
                 && kryptonTextBox4.Text.Length > 7
                 && kryptonComboBox2.Text != "Month"
                 && kryptonTextBox7.Text != "YYYY"
-                && kryptonTextBox7.Text.Length == 4)
-               // && Convert.ToInt32(kryptonTextBox6.Text) > 32)
+                && kryptonTextBox7.Text.Length == 4
+                && Convert.ToInt32(kryptonTextBox6.Text) < 32
+                && kryptonTextBox8.Text.Length == 10)
+
             {
 
                 if (mail.Rows[0][0].ToString() == "0")

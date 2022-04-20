@@ -12,7 +12,9 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
 using System.IO;
-
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace Online_Clinic
 {
@@ -42,65 +44,74 @@ namespace Online_Clinic
                 switch (v)
                 {
                     case 0:
-                        SqlDataAdapter sdafw = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox1.Text + "' AND password='" + kryptonTextBox2.Text + "'", con);
-                        DataTable dseg = new DataTable();
-                        sdafw.Fill(dseg);
-                        if (dseg.Rows[0][0].ToString() == "1")
+                        try
                         {
-                            account_Type = 0;
-                            SqlDataAdapter sdaq = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox1.Text + "' AND verificationCode='" + "unverified" + "'", con);
-                            DataTable dtddd = new DataTable();
-                            sdaq.Fill(dtddd);
-                            if (dtddd.Rows[0][0].ToString() == "1")
+                            SqlDataAdapter sdafw = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox1.Text + "' AND password='" + kryptonTextBox2.Text + "'", con);
+                            DataTable dseg = new DataTable();
+                            sdafw.Fill(dseg);
+                            if (dseg.Rows[0][0].ToString() == "1")
                             {
-                                //MessageBox.Show("doctor but u have to vr ur email");
-                                Form6 f = new Form6();
-                                email = kryptonTextBox1.Text;
-                                f.Show();
-                                this.Hide();
-
-                            }
-                            else
-                            {
-                                Form7 fe = new Form7();
-                                email = kryptonTextBox1.Text;
-                                fe.Show();
-                                this.Hide();
-                                con.Open();
-                                cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
-                                cmd.ExecuteNonQuery();
-                                con.Close();
-                              //  MessageBox.Show("doctor and the email is vertfied");
+                                account_Type = 0;
+                                SqlDataAdapter sdaq = new SqlDataAdapter("SELECT COUNT(*) FROM doctor WHERE email='" + kryptonTextBox1.Text + "' AND verificationCode !='" + "verified" + "'", con);
+                                DataTable dtddd = new DataTable();
+                                sdaq.Fill(dtddd);
+                                if (dtddd.Rows[0][0].ToString() == "1")
+                                {
+                                    //MessageBox.Show("doctor but u have to vr ur email");
+                                    Form6 f = new Form6();
+                                    email = kryptonTextBox1.Text;
+                                    f.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    Form7 fe = new Form7();
+                                    email = kryptonTextBox1.Text;
+                                    fe.Show();
+                                    this.Hide();
+                                    con.Open();
+                                    cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
+                                    cmd.ExecuteNonQuery();
+                                    con.Close();
+                                    //  MessageBox.Show("doctor and the email is vertfied");
+                                }
                             }
                         }
+                        catch //(Exception ex)
+                        {
+                            MessageBox.Show("connection error");                        }
                         break;
                     case 1:
-                        SqlDataAdapter sca = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + kryptonTextBox1.Text + "' AND password='" + kryptonTextBox2.Text + "'", con);
-                        DataTable dtsx = new DataTable();
-                        sca.Fill(dtsx);
-                        if (dtsx.Rows[0][0].ToString() == "1")
+                        try
                         {
-                            account_Type = 1;
-                            SqlDataAdapter sdasz = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + kryptonTextBox1.Text + "' AND verificationCode='" + "unverified" + "'", con);
-                            DataTable dtddad = new DataTable();
-                            sdasz.Fill(dtddad);
-                            if (dtddad.Rows[0][0].ToString() == "1")
+                            SqlDataAdapter sca = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + kryptonTextBox1.Text + "' AND password='" + kryptonTextBox2.Text + "'", con);
+                            DataTable dtsx = new DataTable();
+                            sca.Fill(dtsx);
+                            if (dtsx.Rows[0][0].ToString() == "1")
                             {
-                                //MessageBox.Show("ur patient but u have to vertfie ur email");
-                                email = kryptonTextBox1.Text;
-                                Form6 g = new Form6();
-                                g.Show();
-                                this.Hide();
+                                account_Type = 1;
+                                SqlDataAdapter sdasz = new SqlDataAdapter("SELECT COUNT(*) FROM patient WHERE email='" + kryptonTextBox1.Text + "' AND verificationCode !='" + "verified" + "'", con);
+                                DataTable dtddad = new DataTable();
+                                sdasz.Fill(dtddad);
+                                if (dtddad.Rows[0][0].ToString() == "1")
+                                {
+                                    //MessageBox.Show("ur patient but u have to vertfie ur email");
+                                    email = kryptonTextBox1.Text;
+                                    Form6 g = new Form6();
+                                    g.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    email = kryptonTextBox1.Text;
+                                    // MessageBox.Show("patient and the email is vertfied");
+                                    Form8 s = new Form8();
+                                    s.Show();
+                                    this.Hide();
+                                }
                             }
-                            else
-                            {
-                                email = kryptonTextBox1.Text;
-                               // MessageBox.Show("patient and the email is vertfied");
-                               Form8 s = new Form8();
-                                s.Show();
-                                this.Hide();
-                            }
-                        }
+                        } catch //(Exception ex)
+                        { MessageBox.Show("connection error"); }
                         break;
                     default:
                         {
@@ -219,6 +230,11 @@ namespace Online_Clinic
             Form8 a = new Form8();
             a.Show();
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+         
         }
     }
 }

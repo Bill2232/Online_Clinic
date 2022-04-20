@@ -11,7 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace Online_Clinic
 {
@@ -34,8 +36,8 @@ namespace Online_Clinic
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            label2.Text = "We have sent you the verification code to your email " + email + ",please enter the code in the field below to complete the login.";
-           
+            label2.Text = "We have sent you the verification code to your email " + email + "\n ,please enter the code in the field below to complete the login.";
+
             int account_Type = Form1.account_Type;
             Random rad = new Random();
             verificationCode = rad.Next(10000000, 99999999);
@@ -180,6 +182,8 @@ namespace Online_Clinic
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            label2.Text = "We have sent you the verification code to your email " + email + "\n ,please enter the code in the field below to complete the login.";
+
             int account_Type = Form1.account_Type;
             Random rad = new Random();
             verificationCode = rad.Next(10000000, 99999999);
@@ -233,6 +237,85 @@ namespace Online_Clinic
                 kryptonTextBox1.Text = "";
             kryptonTextBox1.AlwaysActive = true;
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+
+                int account_Type = Form1.account_Type;
+            Random rad = new Random();
+            verificationCode = rad.Next(10000000, 99999999);
+            string emall = Form1.email;
+            switch (account_Type)
+            {
+                case 0:
+                    {
+                        con.Open();
+
+                        SqlCommand command = new SqlCommand("select phone_secretary from doctor where email ='" +  Form1.email + "';", con);
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        while (reader.Read())
+                            label4.Text = reader.GetValue(0).ToString();
+                        con.Close();
+                     //   MessageBox.Show(reader.GetValue(0).ToString());
+                        MessageBox.Show(label4.Text);
+                        con.Close();
+
+                       
+                        con.Open();
+                        cmd = new SqlCommand("UPDATE doctor SET verificationCode='" + Convert.ToString(verificationCode) + "' WHERE email='" + emall + "'", con);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        var accountSid = "AC3fe9d391e490c4da8d29bec79c27be39";
+                        var authToken = "1c2af3bbb3c9a870e853675ff72cb273";
+                        TwilioClient.Init(accountSid, authToken);
+                      
+                        var messageOptions = new CreateMessageOptions(
+                            new PhoneNumber("+964"+label4.Text));
+                        messageOptions.MessagingServiceSid = "MG76b1eb83d3f57557f2b11fb432c5f6e0";
+                        messageOptions.Body = "Online Clinic Account code   "+ Convert.ToString(verificationCode);
+
+                        var message = MessageResource.Create(messageOptions);
+                        Console.WriteLine(message.Body);
+                        label2.Text = "We have sent you the verification code to your phone number 0" + label4.Text + "\n,please enter the code in the field below to complete the login.";
+
+                        break;
+                    }
+                case 1:
+                    {
+                        con.Open();
+                        SqlCommand command = new SqlCommand("select mobile_numbur from patient where email ='" + Form1.email + "';", con);
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        while (reader.Read())
+                            label4.Text = reader.GetString(0);
+                        con.Close();
+                        con.Open();
+                        cmd = new SqlCommand("UPDATE patient SET verificationCode='" + Convert.ToString(verificationCode) + "' WHERE email='" + emall + "'", con);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        var accountSid = "AC3fe9d391e490c4da8d29bec79c27be39";
+                        var authToken = "1c2af3bbb3c9a870e853675ff72cb273";
+                        TwilioClient.Init(accountSid, authToken);
+
+                        var messageOptions = new CreateMessageOptions(
+                            new PhoneNumber("+964"+label4.Text));
+                        messageOptions.MessagingServiceSid = "MG76b1eb83d3f57557f2b11fb432c5f6e0";
+                        messageOptions.Body = "Online Clinic Account code   " + Convert.ToString(verificationCode);
+
+                        var message = MessageResource.Create(messageOptions);
+                        Console.WriteLine(message.Body);
+                        label2.Text = "We have sent you the verification code to your phone number 0" + label4.Text + "\n,please enter the code in the field below to complete the login.";
+
+
+                        break;
+                    }
+
+
+
+            }
         }
     }
 }

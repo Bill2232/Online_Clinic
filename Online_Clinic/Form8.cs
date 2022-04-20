@@ -23,7 +23,7 @@ namespace Online_Clinic
 
         private void Form8_Load(object sender, EventArgs e)
         {
-
+            guna2ComboBox1.Text = "hgfdfghj";
         }
 
         private void guna2ComboBox1_Click(object sender, EventArgs e)
@@ -39,6 +39,7 @@ namespace Online_Clinic
 
         private void kryptonButton2_Click_1(object sender, EventArgs e)
         {
+            
             if (kryptonTextBox1.Text != "Search by Name")
             {
                 con.Open();
@@ -164,6 +165,17 @@ namespace Online_Clinic
         private void kryptonTextBox1_KeyUp(object sender, KeyEventArgs e)
         {
             
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

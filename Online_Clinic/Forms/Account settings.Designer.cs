@@ -136,9 +136,9 @@
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(10, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 26);
+            this.label3.Size = new System.Drawing.Size(116, 26);
             this.label3.TabIndex = 55;
-            this.label3.Text = "Member Since";
+            this.label3.Text = "specialization";
             // 
             // guna2ShadowPanel1
             // 

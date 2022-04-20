@@ -23,7 +23,7 @@ namespace Online_Clinic
         bool Email_available_check = false;
         bool Valid_email = false;
         bool gander_Checked = false;
-        int age = 0;
+      
         string gander;
 
         public Form4()
@@ -48,19 +48,14 @@ namespace Online_Clinic
                 && kryptonTextBox3.Text != ""
                 && kryptonTextBox4.Text != ""
                 && kryptonTextBox5.Text != ""
-                && kryptonTextBox6.Text != ""
-                && kryptonTextBox7.Text != ""
                 && kryptonTextBox8.Text != ""
                 && password_macth == true
                 && Valid_email == true
                 && gander_Checked == true
                 && Email_available_check == true
                 && kryptonTextBox4.Text.Length > 7
-                && kryptonComboBox2.Text != "Month"
-                && kryptonTextBox7.Text != "YYYY"
-                && kryptonTextBox7.Text.Length > 3
-                && Convert.ToInt32(kryptonTextBox6.Text) < 32
-                && kryptonTextBox8.Text.Length == 11)
+                && kryptonComboBox2.Text != "specialization"
+                && kryptonTextBox8.Text.Length == 10)
             {
                 if (mail.Rows[0][0].ToString() == "0")
                 {
@@ -70,7 +65,7 @@ namespace Online_Clinic
 
                     con.Open();
                     cmd = new SqlCommand("insert into doctor ([doctorID],[name],specialization,certificate_name,email,certificate,password,[phone_secretary],verificationCode)values" +
-                        "('" + doctorID + "','" + name + "','" + "null" + "','" + "null" + "','" + email + "','" + "null" + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
+                        "('" + doctorID + "','" + name + "','" + Convert.ToString(kryptonComboBox2.SelectedItem) + "','" + "null" + "','" + email + "','" + "null" + "','" + kryptonTextBox5.Text + "','" + kryptonTextBox8.Text + "','" + "unverified" + "')", con);
                     cmd.ExecuteNonQuery();
                     con.Close();
                     //
@@ -98,10 +93,9 @@ namespace Online_Clinic
                     label3.ForeColor = Color.Red;
                 }
 
-                if (kryptonTextBox6.Text == "" || kryptonTextBox6.Text == "DD" || kryptonTextBox7.Text == "" || kryptonComboBox2.Text == "Month" || kryptonTextBox7.Text == "YYYY" || kryptonTextBox7.Text.Length != 4 || Convert.ToInt32(kryptonTextBox6.Text) > 32)
+                if ( kryptonComboBox2.Text == "specialization")
                     label5.ForeColor = Color.Red;
-                if (age < 16)
-                    label5.ForeColor = Color.Red;
+               
 
                 if (gander_Checked == false)
                     label6.ForeColor = Color.Red;
@@ -287,34 +281,11 @@ namespace Online_Clinic
                 pictureBox2.Visible = true;
         }
 
-        private void kryptonTextBox6_Enter(object sender, EventArgs e)
-        {
-            label5.ForeColor = Color.Black;
-            if (kryptonTextBox6.Text == "DD")
-            {
-                kryptonTextBox6.Text = "";
-                kryptonTextBox6.AlwaysActive = true;
+       
 
-            }
-        }
+       
 
-        private void kryptonTextBox7_Enter(object sender, EventArgs e)
-        {
-            label5.ForeColor = Color.Black;
-            if (kryptonTextBox7.Text == "YYYY")
-            {
-                kryptonTextBox7.AlwaysActive = true;
-                kryptonTextBox7.Text = "";
-            }
-        }
-
-        private void kryptonTextBox7_Leave(object sender, EventArgs e)
-        {
-            DateTime now = DateTime.Now;
-            if (kryptonTextBox7.Text != "")
-                age = (int)(DateTime.Today.Year - Convert.ToInt64(kryptonTextBox7.Text));
-            label5.ForeColor = Color.Black;
-        }
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

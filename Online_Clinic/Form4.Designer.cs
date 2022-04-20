@@ -43,8 +43,6 @@ namespace Online_Clinic
             this.label6 = new System.Windows.Forms.Label();
             this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.kryptonTextBox7 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -60,6 +58,8 @@ namespace Online_Clinic
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -297,21 +297,29 @@ namespace Online_Clinic
             this.kryptonComboBox2.AlwaysActive = false;
             this.kryptonComboBox2.DropDownWidth = 136;
             this.kryptonComboBox2.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.kryptonComboBox2.Location = new System.Drawing.Point(313, 402);
+            "Allergy and immunology",
+            "Anesthesiology",
+            "Dermatology",
+            "Diagnostic radiology",
+            "Emergency medicine",
+            "Family medicine",
+            "Internal medicine",
+            "Medical genetics",
+            "Neurology",
+            "Nuclear medicine",
+            "Obstetrics and gynecology",
+            "Ophthalmology",
+            "Pathology",
+            "Pediatrics",
+            "Physical medicine and rehabilitation",
+            "Preventive medicine",
+            "Psychiatry",
+            "Radiation oncology",
+            "Surgery",
+            "Urology"});
+            this.kryptonComboBox2.Location = new System.Drawing.Point(220, 402);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(140, 32);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(372, 32);
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -321,7 +329,6 @@ namespace Online_Clinic
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Gray;
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBox2.TabIndex = 58;
-            this.kryptonComboBox2.Text = "Month";
             this.kryptonComboBox2.Enter += new System.EventHandler(this.kryptonComboBox2_Enter);
             // 
             // label5
@@ -331,60 +338,9 @@ namespace Online_Clinic
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(217, 374);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 25);
+            this.label5.Size = new System.Drawing.Size(105, 25);
             this.label5.TabIndex = 57;
-            this.label5.Text = "What\'s your date of birth?";
-            // 
-            // kryptonTextBox7
-            // 
-            this.kryptonTextBox7.AlwaysActive = false;
-            this.kryptonTextBox7.Location = new System.Drawing.Point(480, 402);
-            this.kryptonTextBox7.MaxLength = 4;
-            this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(112, 32);
-            this.kryptonTextBox7.StateActive.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox7.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox7.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox7.StateCommon.Border.Width = 1;
-            this.kryptonTextBox7.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox7.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.kryptonTextBox7.TabIndex = 56;
-            this.kryptonTextBox7.Text = "YYYY";
-            this.kryptonTextBox7.Enter += new System.EventHandler(this.kryptonTextBox7_Enter);
-            this.kryptonTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox7_KeyPress);
-            this.kryptonTextBox7.Leave += new System.EventHandler(this.kryptonTextBox7_Leave);
-            // 
-            // kryptonTextBox6
-            // 
-            this.kryptonTextBox6.AlwaysActive = false;
-            this.kryptonTextBox6.Location = new System.Drawing.Point(213, 402);
-            this.kryptonTextBox6.MaxLength = 2;
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(71, 32);
-            this.kryptonTextBox6.StateActive.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox6.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox6.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox6.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox6.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox6.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox6.StateCommon.Border.Width = 1;
-            this.kryptonTextBox6.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox6.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.kryptonTextBox6.TabIndex = 55;
-            this.kryptonTextBox6.Text = "DD";
-            this.kryptonTextBox6.Enter += new System.EventHandler(this.kryptonTextBox6_Enter);
-            this.kryptonTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox6_KeyPress);
+            this.label5.Text = "specialization";
             // 
             // label4
             // 
@@ -627,6 +583,28 @@ namespace Online_Clinic
             this.pictureBox3.Visible = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(159, 566);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 25);
+            this.label13.TabIndex = 77;
+            this.label13.Text = "+964";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(218, 596);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 19);
+            this.label14.TabIndex = 78;
+            this.label14.Text = "ex 7702362681";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -634,6 +612,8 @@ namespace Online_Clinic
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(834, 759);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox2);
@@ -649,8 +629,6 @@ namespace Online_Clinic
             this.Controls.Add(this.label6);
             this.Controls.Add(this.kryptonComboBox2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.kryptonTextBox7);
-            this.Controls.Add(this.kryptonTextBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.kryptonTextBox5);
@@ -697,8 +675,6 @@ namespace Online_Clinic
         private System.Windows.Forms.Label label6;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
@@ -714,5 +690,7 @@ namespace Online_Clinic
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
