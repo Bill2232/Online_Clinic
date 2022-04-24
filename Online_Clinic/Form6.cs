@@ -259,26 +259,26 @@ namespace Online_Clinic
                         while (reader.Read())
                             label4.Text = reader.GetValue(0).ToString();
                         con.Close();
-                     //   MessageBox.Show(reader.GetValue(0).ToString());
-                        MessageBox.Show(label4.Text);
-                        con.Close();
-
-                       
+                   
                         con.Open();
-                        cmd = new SqlCommand("UPDATE doctor SET verificationCode='" + Convert.ToString(verificationCode) + "' WHERE email='" + emall + "'", con);
+                        cmd = new SqlCommand("UPDATE doctor SET verificationCode='" + Convert.ToString(verificationCode) + "' WHERE email='" + Form1.email + "'", con);
                         cmd.ExecuteNonQuery();
                         con.Close();
+
+         
+                        
                         var accountSid = "AC3fe9d391e490c4da8d29bec79c27be39";
-                        var authToken = "1c2af3bbb3c9a870e853675ff72cb273";
+                        var authToken = "a9aa0162cacc39ca5bd4b62b6c4aa37f";
                         TwilioClient.Init(accountSid, authToken);
                       
                         var messageOptions = new CreateMessageOptions(
                             new PhoneNumber("+964"+label4.Text));
                         messageOptions.MessagingServiceSid = "MG76b1eb83d3f57557f2b11fb432c5f6e0";
                         messageOptions.Body = "Online Clinic Account code   "+ Convert.ToString(verificationCode);
-
                         var message = MessageResource.Create(messageOptions);
                         Console.WriteLine(message.Body);
+
+
                         label2.Text = "We have sent you the verification code to your phone number 0" + label4.Text + "\n,please enter the code in the field below to complete the login.";
 
                         break;
@@ -297,16 +297,17 @@ namespace Online_Clinic
                         cmd.ExecuteNonQuery();
                         con.Close();
                         var accountSid = "AC3fe9d391e490c4da8d29bec79c27be39";
-                        var authToken = "1c2af3bbb3c9a870e853675ff72cb273";
+                        var authToken = "a9aa0162cacc39ca5bd4b62b6c4aa37f";
                         TwilioClient.Init(accountSid, authToken);
 
                         var messageOptions = new CreateMessageOptions(
                             new PhoneNumber("+964"+label4.Text));
                         messageOptions.MessagingServiceSid = "MG76b1eb83d3f57557f2b11fb432c5f6e0";
                         messageOptions.Body = "Online Clinic Account code   " + Convert.ToString(verificationCode);
-
                         var message = MessageResource.Create(messageOptions);
                         Console.WriteLine(message.Body);
+
+
                         label2.Text = "We have sent you the verification code to your phone number 0" + label4.Text + "\n,please enter the code in the field below to complete the login.";
 
 
