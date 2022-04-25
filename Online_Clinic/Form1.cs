@@ -73,11 +73,11 @@ namespace Online_Clinic
                                     cmd = new SqlCommand("UPDATE doctor SET Dstate='actve' WHERE email='" + email + "'", con);
                                     cmd.ExecuteNonQuery();
                                     con.Close();
-                                    //  MessageBox.Show("doctor and the email is vertfied");
+                                    // "doctor and the email is vertfied"
                                 }
                             }
                         }
-                        catch //(Exception ex)
+                        catch 
                         {
                             MessageBox.Show("connection error");                        }
                         break;
@@ -95,7 +95,7 @@ namespace Online_Clinic
                                 sdasz.Fill(dtddad);
                                 if (dtddad.Rows[0][0].ToString() == "1")
                                 {
-                                    //MessageBox.Show("ur patient but u have to vertfie ur email");
+                                    //"ur patient but u have to vertfie ur email"
                                     email = kryptonTextBox1.Text;
                                     Form6 g = new Form6();
                                     g.Show();
@@ -104,7 +104,7 @@ namespace Online_Clinic
                                 else
                                 {
                                     email = kryptonTextBox1.Text;
-                                    // MessageBox.Show("patient and the email is vertfied");
+                                    // patient and the email is vertfied"
                                     Form8 s = new Form8();
                                     s.Show();
                                     this.Hide();
@@ -115,12 +115,9 @@ namespace Online_Clinic
                         break;
                     default:
                         {
-                         //   panel1.BackColor = Color.Red;
-                         //   panel1.Visible = true;
-                        //    panel2.BackColor = Color.Red;
-                         //   panel2.Visible = true;
+
                             label3.Visible = true;
-                         //   label3.ForeColor = Color.Red;
+
                         }
                         break;
                 }

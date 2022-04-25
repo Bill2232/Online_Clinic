@@ -378,7 +378,9 @@ namespace Online_Clinic
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Form1 q= new Form1();
+            q.Show();
+            this.Hide();
         }
     }
     
