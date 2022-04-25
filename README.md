@@ -84,9 +84,11 @@ _Try Online Clinic now_
 
 
 3. download the app from the link below
-   ```sh
-   http://www.mediafire.com/file/7z73wizab12h58f/OnlineClinic.rar/file#
-   ```
+   <div align="center">
+  <a href="http://www.mediafire.com/file/7z73wizab12h58f/OnlineClinic.rar/file#">
+    <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg" >
+  </a>
+  </div>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -98,7 +100,7 @@ _Try Online Clinic now_
 
 <div align="center">
   <a href="https://dbdiagram.io/d/6265fdeb1072ae0b6ade0110">
-    <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg" width="80" height="80">
+    <img src="Online_Clinic/product/Untitled.png" width="80" height="80">
   </a>
   </div>
   
