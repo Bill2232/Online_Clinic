@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Bill2232/Online_Clinic">
-    <img src="Online_Clinic/Online_Clinic/done.ico" alt="Logo" width="80" height="80">
+    <img src="Online_Clinic/product/logo (2).PNG" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Online Clinic</h3>
