@@ -85,7 +85,7 @@ _Try Online Clinic now_
 
 3. download the app from the link below
    <div align="center">
-  <a href="http://www.mediafire.com/file/7z73wizab12h58f/OnlineClinic.rar/file#">
+  <a href="http://download939.mediafire.com/cf6a1hs3ni4g/7z73wizab12h58f/OnlineClinic.rar">
     <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg"  width="200" height="90">
   </a>
   </div>
