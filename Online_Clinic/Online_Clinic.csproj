@@ -543,6 +543,7 @@
     <Content Include="logo %282%29.ico" />
     <Content Include="logoapp%282%29.ico" />
     <Content Include="logob %282%29.ico" />
+    <Content Include="product\screenshot.PNG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

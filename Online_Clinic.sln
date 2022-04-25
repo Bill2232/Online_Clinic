@@ -5,11 +5,6 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online_Clinic", "Online_Clinic\Online_Clinic.csproj", "{A2FB2C64-4144-445E-A199-D2775F736C41}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product", "product", "{55490545-A2E3-4CD3-B811-ABEB45402CEF}"
-	ProjectSection(SolutionItems) = preProject
-		Z:\Downloads\screenshot.PNG = Z:\Downloads\screenshot.PNG
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
