@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Bill2232/Online_Clinic">
-    <img src="Online_Clinic/product/logo (2).PNG" alt="Logo" width="80" height="80">
+    <img src="Online_Clinic/product/logo (2).PNG" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Online Clinic</h3>
@@ -86,7 +86,7 @@ _Try Online Clinic now_
 3. download the app from the link below
    <div align="center">
   <a href="http://www.mediafire.com/file/7z73wizab12h58f/OnlineClinic.rar/file#">
-    <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg" >
+    <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg"  width="200" height="90">
   </a>
   </div>
 
@@ -100,7 +100,7 @@ _Try Online Clinic now_
 
 <div align="center">
   <a href="https://dbdiagram.io/d/6265fdeb1072ae0b6ade0110">
-    <img src="Online_Clinic/product/Untitled.png" width="80" height="80">
+    <img src="Online_Clinic/product/Untitled.png" >
   </a>
   </div>
   
