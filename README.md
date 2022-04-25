@@ -76,7 +76,7 @@
 
 
 
-  ```
+
 
 ### Installation
 
@@ -92,6 +92,17 @@ _Try Online Clinic now_
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- database diagram-->
+## database diagram
+
+
+<div align="center">
+  <a href="https://dbdiagram.io/d/6265fdeb1072ae0b6ade0110">
+    <img src="Online_Clinic/product/png-clipart-brand-logo-product-design-label-button-label-text (2).jpg" width="80" height="80">
+  </a>
+  </div>
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
